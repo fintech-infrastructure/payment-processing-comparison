@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stripe vs Paddle (2026): Payment Processor vs Merchant of Record</title>
-  <meta name="description" content="Compare Stripe (2.9% + $0.30) vs Paddle (5% + $0.50 Merchant of Record) for SaaS subscriptions, global sales tax/VAT compliance, and chargebacks.">
+  <title>Stripe vs Paddle (2026): Fees, Compatibility &amp; Cost Comparison</title>
+  <meta name="description" content="Compare Stripe (2.9% + $0.30) vs Paddle (5.0% + $0.50 (MoR all-in)) for US businesses.">
   <link rel="canonical" href="https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-vs-paddle.html">
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -18,28 +18,33 @@
         <a href="./">Fee Calculator</a>
         <a href="stripe-vs-square.html">Stripe vs Square</a>
         <a href="stripe-alternatives.html">Stripe Alternatives</a>
+        <a href="cheapest-payment-processors.html">Cheapest Processors</a>
         <a href="payment-gateway-api-comparison.html">API Comparison</a>
       </nav>
     </div>
   </header>
   <main class="container">
     <section class="hero">
-      <h1>Stripe vs Paddle: Merchant of Record</h1>
-      <p class="lead">Compare Stripe’s 2.9% + $0.30 processing against Paddle’s 5.0% + $0.50 all-in MoR model.</p>
+      <h1>Stripe vs Paddle</h1>
+      <p class="lead">Compare real monthly fees, ACH, countries, and integrations for Stripe and Paddle.</p>
     </section>
     <section class="card">
       <div class="table-wrap">
         <table>
           <thead><tr><th>Criteria</th><th>Stripe</th><th>Paddle</th></tr></thead>
           <tbody>
-            <tr><td>Model</td><td>Payment Processor</td><td>Merchant of Record (MoR)</td></tr>
-            <tr><td>Standard US fee</td><td class="mono">2.9% + $0.30</td><td class="mono">5.0% + $0.50 all-in</td></tr>
-            <tr><td>Sales tax / VAT remittance</td><td>Merchant responsibility (Stripe Tax extra)</td><td>Handled globally by Paddle</td></tr>
-            <tr><td>Chargebacks</td><td>Merchant manages disputes</td><td>Absorbed/managed by Paddle</td></tr>
+            <tr><td>Pricing model</td><td>flat rate</td><td>flat rate</td></tr>
+            <tr><td>Published rate</td><td class="mono">2.9% + $0.30</td><td class="mono">5.0% + $0.50 (MoR all-in)</td></tr>
+            <tr><td>$20k/mo ($50 avg ticket)</td><td class="mono">$700.00/mo (3.50%)</td><td class="mono">$1,200.00/mo (6.00%)</td></tr>
+            <tr><td>$100k/mo ($100 avg ticket)</td><td class="mono">$3,200.00/mo (3.20%)</td><td class="mono">$5,500.00/mo (5.50%)</td></tr>
+            <tr><td>ACH bank debit</td><td class="mono">0.8% (capped at $5.00)</td><td class="mono">Not available</td></tr>
+            <tr><td>Merchant countries</td><td>46 countries</td><td>200 countries</td></tr>
+            <tr><td>Tax responsibility</td><td>Merchant handles tax</td><td>Merchant of Record</td></tr>
+            <tr><td>Summary</td><td>Developer-first full-stack payment processor with broad APIs, subscriptions, and global card/wallet support.</td><td>Merchant of Record for B2B/B2C SaaS that handles global sales tax/VAT, subscriptions, and chargebacks in one 5% + $0.50 fee.</td></tr>
           </tbody>
         </table>
       </div>
-      <a class="cta-link" href="./">Filter by Merchant of Record</a>
+      <a class="cta-link" href="./">Compare with your volume</a>
     </section>
   </main>
   <footer class="site-footer"><div class="container">Verified 2026-11-17. <a href="./">Back to Calculator</a></div></footer>

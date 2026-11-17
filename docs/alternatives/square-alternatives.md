@@ -1,10 +1,13 @@
 # Best Square Alternatives (2026)
 
-If Square's **3.3% + $0.30** free online card rate is eating into your margins, or you need deeper SaaS/API billing:
+Compare lower online card rates, POS systems, and zero-fee micro-merchant tools.
 
-| Alternative | Online Card Rate | Best For |
-| --- | --- | --- |
-| **Stripe** | 2.9% + $0.30 | Online stores, SaaS subscriptions, custom APIs |
-| **Helcim** | Interchange + 0.50% + $0.25 | US/CA businesses wanting lower online + in-person rates without monthly fees |
-| **PayPal (Expanded)** | 2.89% + $0.29 | Adding PayPal Wallet/Venmo alongside lower online card rates |
-| **Shopify Payments** | 2.9% + $0.30 (Basic) | Retailers moving online store + POS onto Shopify |
+| Provider | Published Rate | $20k/mo Est. | Best Fit | Migration Effort |
+| --- | --- | --- | --- | --- |
+| **Stripe** | 2.9% + $0.30 | $700.00/mo (3.50%) | Developer-first full-stack payment processor with broad APIs, subscriptions, and global card/wallet support. | Medium |
+| **Helcim** | Interchange + 0.50% + $0.25 | $630.00/mo (3.15%) (est.) | Transparent interchange-plus processor for US and Canadian SMBs with no monthly fee and automatic volume tiers. | Medium |
+| **SumUp** | 2.9% + $0.15 | $640.00/mo (3.20%) | Zero-monthly-fee POS and online invoicing processor built for solo operators and micro-merchants. | Low |
+| **Clover** | 3.5% + $0.10 (+ $14.95/mo) | $754.95/mo (3.77%) | Fiserv-owned retail and restaurant POS hardware + online ordering platform. | High |
+| **Toast** | 3.09% + $0.15 (starter) | $678.00/mo (3.39%) | Vertical restaurant POS and online ordering processor with starter $0/mo software tier. | High |
+| **Chase Payment Solutions** | 2.9% + $0.25 | $680.00/mo (3.40%) | Bank-owned flat-rate processor from JPMorgan Chase with 2.9% + $0.25 online pricing and same-day bank deposits. | Medium |
+| **PayPal** | 2.89% + $0.29 | $694.00/mo (3.47%) | Widely recognized checkout brand offering PayPal Wallet, Venmo, Pay Later, and Expanded card processing. | Medium |

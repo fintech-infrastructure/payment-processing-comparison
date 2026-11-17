@@ -1,15 +1,14 @@
-# Best Stripe Alternatives (By Use Case, 2026)
+# Best Stripe Alternatives (2026)
 
-Switching away from Stripe usually happens for one of four reasons: lower interchange-plus fees at higher volume, global sales tax delegation (Merchant of Record), Shopify native integration, or B2B ACH cost reduction.
+Compare interchange-plus rates, Merchant of Record tax handling, and B2B ACH.
 
-| Alternative | Pricing | Best Reason to Switch from Stripe | Migration Effort |
-| --- | --- | --- | --- |
-| **Helcim** | Interchange + 0.50% + $0.25 | Lower effective rates on US/CA domestic cards & debit | Medium (PCI token export) |
-| **Stax** | $99/mo + Interchange + $0.15 | Saves money once monthly card volume exceeds ~$10k–$15k | Medium |
-| **Braintree** | 2.59% + $0.49 | Built-in PayPal & Venmo support + lower % on high-ticket sales | Medium |
-| **Paddle** | 5.0% + $0.50 | Eliminates global VAT/sales tax compliance for SaaS | High (MoR owns billing) |
-| **Lemon Squeezy** | 5.0% + $0.50 | Fast MoR setup for indie SaaS, AI tools, and digital goods | High (MoR owns billing) |
-| **GoCardless** | 1.0% + $0.25 (cap $4.00) | Recurring B2B ACH bank debit without card fees | Medium |
-| **Adyen** | Custom (Interchange++) | Enterprise global acquiring across 150+ currencies | High |
-
-Run the [Switching Calculator](../index.html) or CLI (`python3 -m src.calculator.cli --volume 20000 --ticket 50 --current stripe`) to estimate your exact monthly savings.
+| Provider | Published Rate | $20k/mo Est. | Best Fit | Migration Effort |
+| --- | --- | --- | --- | --- |
+| **Helcim** | Interchange + 0.50% + $0.25 | $630.00/mo (3.15%) (est.) | Transparent interchange-plus processor for US and Canadian SMBs with no monthly fee and automatic volume tiers. | Medium |
+| **Dharma Merchant Services** | Interchange + 0.25% + $0.15 (+ $25/mo) | $565.00/mo (2.83%) (est.) | Low-markup US interchange-plus merchant services provider with transparent pricing and no cancellation fees. | Medium |
+| **Stax** | Interchange + 0% + $0.15 (+ $99/mo) | $589.00/mo (2.94%) (est.) | Membership-style processor charging a flat monthly subscription plus 0% markup over direct interchange. | Medium |
+| **Braintree** | 2.59% + $0.49 | $714.00/mo (3.57%) | PayPal-owned developer gateway combining cards, ACH, Apple Pay, Google Pay, PayPal, and Venmo in one integration. | Medium |
+| **Paddle** | 5.0% + $0.50 (MoR all-in) | $1,200.00/mo (6.00%) | Merchant of Record for B2B/B2C SaaS that handles global sales tax/VAT, subscriptions, and chargebacks in one 5% + $0.50 fee. | High |
+| **Lemon Squeezy** | 5.0% + $0.50 (MoR all-in) | $1,200.00/mo (6.00%) | Developer-friendly Merchant of Record for SaaS, digital products, and license keys with built-in global tax compliance. | High |
+| **GoCardless** | 1.0% + $0.25 (capped at $4.00) | $300.00/mo (1.50%) | Bank-to-bank ACH and international direct debit specialist for recurring B2B and subscription invoices (no cards). | Medium |
+| **Adyen** | Custom pricing (Interchange++ + ~$0.13) | Custom pricing | Enterprise omnichannel processor using Interchange++ pricing and direct local acquiring. | High |

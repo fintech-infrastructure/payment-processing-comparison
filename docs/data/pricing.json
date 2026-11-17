@@ -302,6 +302,282 @@
       "notes": "Merchant of Record fee includes global tax/VAT compliance. +1.5% applies to international cards and PayPal transactions.",
       "source_url": "https://www.lemonsqueezy.com/pricing",
       "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "dharma-merchant-services",
+      "plan_name": "MX Merchant Interchange-Plus",
+      "pricing_model": "interchange_plus",
+      "is_estimated": true,
+      "monthly_fee_usd": 25.0,
+      "online_card": {
+        "markup_percent": 0.0025,
+        "markup_fixed_usd": 0.15,
+        "display": "Interchange + 0.25% + $0.15 (+ $25/mo)"
+      },
+      "in_person_card": {
+        "markup_percent": 0.0015,
+        "markup_fixed_usd": 0.08,
+        "display": "Interchange + 0.15% + $0.08 (+ $25/mo)"
+      },
+      "ach": {
+        "percent": 0.005,
+        "fixed_usd": 0.25,
+        "cap_usd": null,
+        "min_usd": 0.0,
+        "display": "0.5% + $0.25"
+      },
+      "international_card_surcharge_percent": 0.0,
+      "currency_conversion_surcharge_percent": 0.0,
+      "notes": "Very low interchange-plus markup for US merchants; $25/mo account fee.",
+      "source_url": "https://www.dharmamerchantservices.com/rates/",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "payline-data",
+      "plan_name": "Online Interchange-Plus",
+      "pricing_model": "interchange_plus",
+      "is_estimated": true,
+      "monthly_fee_usd": 20.0,
+      "online_card": {
+        "markup_percent": 0.004,
+        "markup_fixed_usd": 0.20,
+        "display": "Interchange + 0.40% + $0.20 (+ $20/mo)"
+      },
+      "in_person_card": {
+        "markup_percent": 0.002,
+        "markup_fixed_usd": 0.10,
+        "display": "Interchange + 0.20% + $0.10 (+ $10/mo)"
+      },
+      "ach": {
+        "percent": 0.005,
+        "fixed_usd": 0.25,
+        "cap_usd": null,
+        "min_usd": 0.0,
+        "display": "0.5% + $0.25"
+      },
+      "international_card_surcharge_percent": 0.0,
+      "currency_conversion_surcharge_percent": 0.0,
+      "notes": "Published US interchange-plus tier; high-risk verticals receive custom underwriting.",
+      "source_url": "https://paylinedata.com/pricing/",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "payment-depot",
+      "plan_name": "Membership Interchange-Plus",
+      "pricing_model": "subscription_interchange_plus",
+      "is_estimated": true,
+      "monthly_fee_usd": 79.0,
+      "online_card": {
+        "markup_percent": 0.0,
+        "markup_fixed_usd": 0.15,
+        "display": "Interchange + 0% + $0.15 (+ $79/mo)"
+      },
+      "in_person_card": {
+        "markup_percent": 0.0,
+        "markup_fixed_usd": 0.10,
+        "display": "Interchange + 0% + $0.10 (+ $79/mo)"
+      },
+      "ach": null,
+      "international_card_surcharge_percent": 0.0,
+      "currency_conversion_surcharge_percent": 0.0,
+      "notes": "Flat monthly membership plus 0% percentage markup over interchange.",
+      "source_url": "https://paymentdepot.com/pricing/",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "chase-payment-solutions",
+      "plan_name": "Standard US Flat-Rate",
+      "pricing_model": "flat_rate",
+      "is_estimated": false,
+      "monthly_fee_usd": 0.0,
+      "online_card": {
+        "percent": 0.029,
+        "fixed_usd": 0.25,
+        "display": "2.9% + $0.25"
+      },
+      "in_person_card": {
+        "percent": 0.026,
+        "fixed_usd": 0.10,
+        "display": "2.6% + $0.10"
+      },
+      "ach": null,
+      "international_card_surcharge_percent": 0.0,
+      "currency_conversion_surcharge_percent": 0.0,
+      "notes": "$0.05 cheaper per online transaction than Stripe's standard rate; $0 monthly fee.",
+      "source_url": "https://www.chase.com/business/payments/pricing",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "sumup",
+      "plan_name": "Pay-As-You-Go",
+      "pricing_model": "flat_rate",
+      "is_estimated": false,
+      "monthly_fee_usd": 0.0,
+      "online_card": {
+        "percent": 0.029,
+        "fixed_usd": 0.15,
+        "display": "2.9% + $0.15"
+      },
+      "in_person_card": {
+        "percent": 0.026,
+        "fixed_usd": 0.0,
+        "display": "2.6% (in-person)"
+      },
+      "ach": null,
+      "international_card_surcharge_percent": 0.0,
+      "currency_conversion_surcharge_percent": 0.0,
+      "notes": "Lower fixed per-transaction fee ($0.15 online, $0 in-person) than Square Free; no monthly fee.",
+      "source_url": "https://www.sumup.com/en-us/pricing/",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "clover",
+      "plan_name": "Starter POS + Online",
+      "pricing_model": "flat_rate",
+      "is_estimated": false,
+      "monthly_fee_usd": 14.95,
+      "online_card": {
+        "percent": 0.035,
+        "fixed_usd": 0.10,
+        "display": "3.5% + $0.10 (+ $14.95/mo)"
+      },
+      "in_person_card": {
+        "percent": 0.026,
+        "fixed_usd": 0.10,
+        "display": "2.6% + $0.10 (+ $14.95/mo)"
+      },
+      "ach": null,
+      "international_card_surcharge_percent": 0.0,
+      "currency_conversion_surcharge_percent": 0.0,
+      "notes": "Software plans start at $14.95/mo; reseller/bank-sold Clover plans may use custom interchange-plus.",
+      "source_url": "https://www.clover.com/pricing",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "toast",
+      "plan_name": "Starter Kit (Pay-as-you-go)",
+      "pricing_model": "flat_rate",
+      "is_estimated": false,
+      "monthly_fee_usd": 0.0,
+      "online_card": {
+        "percent": 0.0309,
+        "fixed_usd": 0.15,
+        "display": "3.09% + $0.15 (starter)"
+      },
+      "in_person_card": {
+        "percent": 0.0249,
+        "fixed_usd": 0.15,
+        "display": "2.49% + $0.15 (in-person)"
+      },
+      "ach": null,
+      "international_card_surcharge_percent": 0.0,
+      "currency_conversion_surcharge_percent": 0.0,
+      "notes": "Starter hardware-financed plan has higher card rates; paid software tiers lower card fees.",
+      "source_url": "https://pos.toasttab.com/pricing",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "nmi",
+      "plan_name": "Gateway-Only (Via Reseller)",
+      "pricing_model": "custom",
+      "is_estimated": true,
+      "monthly_fee_usd": 0.0,
+      "online_card": {
+        "percent": null,
+        "fixed_usd": null,
+        "display": "Custom pricing (Gateway + Acquirer)"
+      },
+      "in_person_card": null,
+      "ach": {
+        "percent": 0.0,
+        "fixed_usd": 0.0,
+        "cap_usd": null,
+        "min_usd": 0.0,
+        "display": "Custom ACH via acquirer"
+      },
+      "international_card_surcharge_percent": 0.0,
+      "currency_conversion_surcharge_percent": 0.0,
+      "notes": "Gateway sold through ISOs/resellers; total cost depends on the underlying merchant acquirer.",
+      "source_url": "https://www.nmi.com/pricing/",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "durango-merchant-services",
+      "plan_name": "High-Risk Underwritten Account",
+      "pricing_model": "custom",
+      "is_estimated": true,
+      "monthly_fee_usd": 0.0,
+      "online_card": {
+        "percent": null,
+        "fixed_usd": null,
+        "display": "Custom pricing (High-risk quote)"
+      },
+      "in_person_card": null,
+      "ach": null,
+      "international_card_surcharge_percent": 0.0,
+      "currency_conversion_surcharge_percent": 0.0,
+      "notes": "Rates depend on industry risk category, chargeback history, and rolling reserve terms.",
+      "source_url": "https://durangomerchantservices.com/high-risk-merchant-accounts/",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "2checkout",
+      "plan_name": "2Sell Standard",
+      "pricing_model": "flat_rate",
+      "is_estimated": false,
+      "monthly_fee_usd": 0.0,
+      "online_card": {
+        "percent": 0.035,
+        "fixed_usd": 0.35,
+        "display": "3.5% + $0.35 (2Sell)"
+      },
+      "in_person_card": null,
+      "ach": null,
+      "international_card_surcharge_percent": 0.0,
+      "currency_conversion_surcharge_percent": 0.02,
+      "notes": "2Subscribe is 4.5% + $0.45; 2Monetize (full SaaS MoR) is 6.0% + $0.60.",
+      "source_url": "https://www.2checkout.com/pricing/",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "fastspring",
+      "plan_name": "Enterprise SaaS MoR",
+      "pricing_model": "custom",
+      "is_estimated": true,
+      "monthly_fee_usd": 0.0,
+      "online_card": {
+        "percent": null,
+        "fixed_usd": null,
+        "display": "Custom pricing (MoR quote)"
+      },
+      "in_person_card": null,
+      "ach": null,
+      "international_card_surcharge_percent": 0.0,
+      "currency_conversion_surcharge_percent": 0.0,
+      "notes": "Volume-based custom Merchant of Record pricing for software and SaaS companies.",
+      "source_url": "https://fastspring.com/pricing/",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "dwolla",
+      "plan_name": "ACH API Platform",
+      "pricing_model": "custom",
+      "is_estimated": true,
+      "monthly_fee_usd": 0.0,
+      "online_card": null,
+      "in_person_card": null,
+      "ach": {
+        "percent": 0.0,
+        "fixed_usd": 0.0,
+        "cap_usd": null,
+        "min_usd": 0.0,
+        "display": "Custom ACH API pricing"
+      },
+      "international_card_surcharge_percent": 0.0,
+      "currency_conversion_surcharge_percent": 0.0,
+      "notes": "Custom monthly platform pricing for US ACH, Same-Day ACH, and RTP APIs.",
+      "source_url": "https://www.dwolla.com/pricing/",
+      "verification_date": "2026-11-17"
     }
   ]
 }

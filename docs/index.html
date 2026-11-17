@@ -105,8 +105,26 @@
             <option value="square">Square</option>
             <option value="paypal">PayPal</option>
             <option value="braintree">Braintree</option>
+            <option value="helcim">Helcim</option>
             <option value="authorize-net">Authorize.net</option>
+            <option value="stax">Stax</option>
             <option value="shopify-payments">Shopify Payments</option>
+            <option value="adyen">Adyen</option>
+            <option value="gocardless">GoCardless</option>
+            <option value="paddle">Paddle</option>
+            <option value="lemon-squeezy">Lemon Squeezy</option>
+            <option value="dharma-merchant-services">Dharma Merchant Services</option>
+            <option value="payline-data">Payline Data</option>
+            <option value="payment-depot">Payment Depot</option>
+            <option value="chase-payment-solutions">Chase Payment Solutions</option>
+            <option value="sumup">SumUp</option>
+            <option value="clover">Clover</option>
+            <option value="toast">Toast</option>
+            <option value="nmi">NMI</option>
+            <option value="durango-merchant-services">Durango Merchant Services</option>
+            <option value="2checkout">2Checkout (Verifone)</option>
+            <option value="fastspring">FastSpring</option>
+            <option value="dwolla">Dwolla</option>
           </select>
         </div>
       </div>
@@ -152,28 +170,55 @@
     </section>
 
     <section class="guides-section">
-      <h2>Decision Guides &amp; Comparisons</h2>
+      <h2>Category &amp; API Guides</h2>
       <div class="guides-grid">
-        <a class="guide-card" href="stripe-vs-square.html">
-          <h3>Stripe vs Square</h3>
-          <p>Online vs in-person rates, POS lock-in, and $20k/mo fee breakdown.</p>
-        </a>
-        <a class="guide-card" href="stripe-vs-paypal.html">
-          <h3>Stripe vs PayPal</h3>
-          <p>Expanded card rates vs PayPal Wallet/Venmo fees and vault portability.</p>
-        </a>
-        <a class="guide-card" href="stripe-alternatives.html">
-          <h3>Stripe Alternatives</h3>
-          <p>Helcim, Stax, Braintree, Paddle, and GoCardless compared by switching reason.</p>
-        </a>
-        <a class="guide-card" href="stripe-vs-paddle.html">
-          <h3>Stripe vs Paddle (MoR)</h3>
-          <p>When paying 5% + $0.50 all-in beats managing global sales tax yourself.</p>
-        </a>
-        <a class="guide-card" href="payment-gateway-api-comparison.html">
-          <h3>Payment Gateway APIs</h3>
-          <p>SDKs, webhooks, sandboxes, and metered billing for developers.</p>
-        </a>
+        <a class="guide-card" href="payment-gateway-api-comparison.html"><h3>Payment Gateway API Comparison</h3><p>SDKs, webhooks, sandboxes, and metered billing.</p></a>
+        <a class="guide-card" href="ach-payment-processors.html"><h3>ACH Payment Processors</h3><p>Bank-to-bank ACH fees vs card processing.</p></a>
+        <a class="guide-card" href="cheapest-payment-processors.html"><h3>Cheapest Payment Processors</h3><p>Ranked by real monthly cost at $20k/mo.</p></a>
+        <a class="guide-card" href="merchant-of-record-comparison.html"><h3>Merchant of Record Comparison</h3><p>Paddle, Lemon Squeezy, 2Checkout, FastSpring.</p></a>
+      </div>
+    </section>
+
+    <section class="guides-section">
+      <h2>Processor Alternatives</h2>
+      <div class="guides-grid">
+        <a class="guide-card" href="stripe-alternatives.html"><h3>Best Stripe Alternatives</h3><p>Compare interchange-plus rates, Merchant of Record tax handling, and B2B ACH.</p></a>
+        <a class="guide-card" href="square-alternatives.html"><h3>Best Square Alternatives</h3><p>Compare lower online card rates, POS systems, and zero-fee micro-merchant tools.</p></a>
+        <a class="guide-card" href="paypal-alternatives.html"><h3>Best PayPal Alternatives</h3><p>Compare developer APIs, native ACH support, and lower card processing fees.</p></a>
+        <a class="guide-card" href="shopify-payments-alternatives.html"><h3>Best Shopify Payments Alternatives</h3><p>Compare third-party gateways for Shopify stores and cross-border checkout.</p></a>
+        <a class="guide-card" href="braintree-alternatives.html"><h3>Best Braintree Alternatives</h3><p>Compare developer-first gateways, interchange-plus pricing, and wallet support.</p></a>
+        <a class="guide-card" href="authorize-net-alternatives.html"><h3>Best Authorize.net Alternatives</h3><p>Compare modern payment APIs, gateway-only options, and no-monthly-fee processors.</p></a>
+        <a class="guide-card" href="paddle-alternatives.html"><h3>Best Paddle Alternatives (MoR)</h3><p>Compare SaaS Merchant of Record platforms and global tax-handling options.</p></a>
+        <a class="guide-card" href="clover-alternatives.html"><h3>Best Clover Alternatives</h3><p>Compare transparent POS and online card processors without long reseller contracts.</p></a>
+        <a class="guide-card" href="high-risk-payment-processors.html"><h3>High-Risk Payment Processors</h3><p>Compare gateways and underwritten accounts for industries declined by aggregators.</p></a>
+      </div>
+    </section>
+
+    <section class="guides-section">
+      <h2>Head-to-Head Comparisons</h2>
+      <div class="guides-grid">
+        <a class="guide-card" href="stripe-vs-square.html"><h3>Stripe vs Square</h3><p>2.9% + $0.30 vs 3.3% + $0.30</p></a>
+        <a class="guide-card" href="stripe-vs-paypal.html"><h3>Stripe vs PayPal</h3><p>2.9% + $0.30 vs 2.89% + $0.29</p></a>
+        <a class="guide-card" href="square-vs-paypal.html"><h3>Square vs PayPal</h3><p>3.3% + $0.30 vs 2.89% + $0.29</p></a>
+        <a class="guide-card" href="stripe-vs-helcim.html"><h3>Stripe vs Helcim</h3><p>2.9% + $0.30 vs Interchange + 0.50% + $0.25</p></a>
+        <a class="guide-card" href="stripe-vs-paddle.html"><h3>Stripe vs Paddle</h3><p>2.9% + $0.30 vs 5.0% + $0.50 (MoR all-in)</p></a>
+        <a class="guide-card" href="stripe-vs-braintree.html"><h3>Stripe vs Braintree</h3><p>2.9% + $0.30 vs 2.59% + $0.49</p></a>
+        <a class="guide-card" href="stripe-vs-adyen.html"><h3>Stripe vs Adyen</h3><p>2.9% + $0.30 vs Custom pricing (Interchange++ + ~$0.13)</p></a>
+        <a class="guide-card" href="stripe-vs-dharma-merchant-services.html"><h3>Stripe vs Dharma Merchant Services</h3><p>2.9% + $0.30 vs Interchange + 0.25% + $0.15 (+ $25/mo)</p></a>
+        <a class="guide-card" href="stripe-vs-stax.html"><h3>Stripe vs Stax</h3><p>2.9% + $0.30 vs Interchange + 0% + $0.15 (+ $99/mo)</p></a>
+        <a class="guide-card" href="stripe-vs-authorize-net.html"><h3>Stripe vs Authorize.net</h3><p>2.9% + $0.30 vs 2.9% + $0.30 (+ $25/mo)</p></a>
+        <a class="guide-card" href="stripe-vs-lemon-squeezy.html"><h3>Stripe vs Lemon Squeezy</h3><p>2.9% + $0.30 vs 5.0% + $0.50 (MoR all-in)</p></a>
+        <a class="guide-card" href="stripe-vs-2checkout.html"><h3>Stripe vs 2Checkout</h3><p>2.9% + $0.30 vs 3.5% + $0.35 (2Sell)</p></a>
+        <a class="guide-card" href="square-vs-clover.html"><h3>Square vs Clover</h3><p>3.3% + $0.30 vs 3.5% + $0.10 (+ $14.95/mo)</p></a>
+        <a class="guide-card" href="square-vs-toast.html"><h3>Square vs Toast</h3><p>3.3% + $0.30 vs 3.09% + $0.15 (starter)</p></a>
+        <a class="guide-card" href="square-vs-sumup.html"><h3>Square vs SumUp</h3><p>3.3% + $0.30 vs 2.9% + $0.15</p></a>
+        <a class="guide-card" href="square-vs-helcim.html"><h3>Square vs Helcim</h3><p>3.3% + $0.30 vs Interchange + 0.50% + $0.25</p></a>
+        <a class="guide-card" href="helcim-vs-stax.html"><h3>Helcim vs Stax</h3><p>Interchange + 0.50% + $0.25 vs Interchange + 0% + $0.15 (+ $99/mo)</p></a>
+        <a class="guide-card" href="helcim-vs-dharma-merchant-services.html"><h3>Helcim vs Dharma Merchant Services</h3><p>Interchange + 0.50% + $0.25 vs Interchange + 0.25% + $0.15 (+ $25/mo)</p></a>
+        <a class="guide-card" href="helcim-vs-payment-depot.html"><h3>Helcim vs Payment Depot</h3><p>Interchange + 0.50% + $0.25 vs Interchange + 0% + $0.15 (+ $79/mo)</p></a>
+        <a class="guide-card" href="paddle-vs-lemon-squeezy.html"><h3>Paddle vs Lemon Squeezy</h3><p>5.0% + $0.50 (MoR all-in) vs 5.0% + $0.50 (MoR all-in)</p></a>
+        <a class="guide-card" href="gocardless-vs-dwolla.html"><h3>GoCardless vs Dwolla</h3><p>1.0% + $0.25 (capped at $4.00) vs Custom ACH API pricing</p></a>
+        <a class="guide-card" href="authorize-net-vs-nmi.html"><h3>Authorize.net vs NMI</h3><p>2.9% + $0.30 (+ $25/mo) vs Custom pricing (Gateway + Acquirer)</p></a>
       </div>
     </section>
   </main>

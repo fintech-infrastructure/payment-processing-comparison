@@ -68,7 +68,7 @@ class TestCalculatorEngine(unittest.TestCase):
             )
         )
         compatible_ids = {r.provider_id for r in report.compatible}
-        self.assertEqual(compatible_ids, {"paddle", "lemon-squeezy"})
+        self.assertEqual(compatible_ids, {"paddle", "lemon-squeezy", "2checkout", "fastspring"})
 
     def test_switching_calculator_from_stripe(self) -> None:
         report = compare_processors(

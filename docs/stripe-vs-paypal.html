@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stripe vs PayPal (2026): Card Fees, Wallets &amp; Developer Comparison</title>
-  <meta name="description" content="Compare Stripe (2.9% + $0.30) vs PayPal Expanded (2.89% + $0.29) and PayPal Checkout (3.49% + $0.49). Includes ACH support, Venmo, and token portability.">
+  <title>Stripe vs PayPal (2026): Fees, Compatibility &amp; Cost Comparison</title>
+  <meta name="description" content="Compare Stripe (2.9% + $0.30) vs PayPal (2.89% + $0.29) for US businesses.">
   <link rel="canonical" href="https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-vs-paypal.html">
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -18,25 +18,29 @@
         <a href="./">Fee Calculator</a>
         <a href="stripe-vs-square.html">Stripe vs Square</a>
         <a href="stripe-alternatives.html">Stripe Alternatives</a>
+        <a href="cheapest-payment-processors.html">Cheapest Processors</a>
         <a href="payment-gateway-api-comparison.html">API Comparison</a>
       </nav>
     </div>
   </header>
   <main class="container">
     <section class="hero">
-      <h1>Stripe vs PayPal for Business</h1>
-      <p class="lead">Compare 2.9% + $0.30 on Stripe against PayPal Expanded cards and Wallet rates.</p>
+      <h1>Stripe vs PayPal</h1>
+      <p class="lead">Compare 2.9% + $0.30 on Stripe against 2.89% + $0.29 on PayPal.</p>
     </section>
     <section class="card">
       <div class="table-wrap">
         <table>
           <thead><tr><th>Criteria</th><th>Stripe</th><th>PayPal</th></tr></thead>
           <tbody>
-            <tr><td>Online card rate (US)</td><td class="mono">2.9% + $0.30</td><td class="mono">2.89% + $0.29 (Expanded) / 3.49% + $0.49 (Wallet)</td></tr>
-            <tr><td>$20k/mo, $50 avg ticket</td><td class="mono">$700.00/mo</td><td class="mono">$694.00/mo (Expanded) / $894.00/mo (Wallet)</td></tr>
-            <tr><td>ACH bank debit</td><td class="mono">0.8% (cap $5.00)</td><td>Not available as standard US ACH</td></tr>
-            <tr><td>Wallets</td><td>Apple Pay, Google Pay, Link</td><td>PayPal Wallet, Venmo, Pay Later, Apple/Google Pay</td></tr>
-            <tr><td>Token portability</td><td>PCI-compliant card export</td><td>Card export; PayPal Wallet agreements are locked</td></tr>
+            <tr><td>Pricing model</td><td>flat rate</td><td>flat rate</td></tr>
+            <tr><td>Published rate</td><td class="mono">2.9% + $0.30</td><td class="mono">2.89% + $0.29</td></tr>
+            <tr><td>$20k/mo ($50 avg ticket)</td><td class="mono">$700.00/mo (3.50%)</td><td class="mono">$694.00/mo (3.47%)</td></tr>
+            <tr><td>$100k/mo ($100 avg ticket)</td><td class="mono">$3,200.00/mo (3.20%)</td><td class="mono">$3,180.00/mo (3.18%)</td></tr>
+            <tr><td>ACH bank debit</td><td class="mono">0.8% (capped at $5.00)</td><td class="mono">Not available</td></tr>
+            <tr><td>Merchant countries</td><td>46 countries</td><td>200 countries</td></tr>
+            <tr><td>Tax responsibility</td><td>Merchant handles tax</td><td>Merchant handles tax</td></tr>
+            <tr><td>Summary</td><td>Developer-first full-stack payment processor with broad APIs, subscriptions, and global card/wallet support.</td><td>Widely recognized checkout brand offering PayPal Wallet, Venmo, Pay Later, and Expanded card processing.</td></tr>
           </tbody>
         </table>
       </div>

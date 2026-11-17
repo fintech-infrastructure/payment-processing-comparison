@@ -73,6 +73,9 @@
 
     if (params.paymentType === "ach") {
       const ach = pricing.ach;
+      if (model === "custom") {
+        return { cost: null, display: ach.display || "Custom ACH pricing" };
+      }
       let perTx = params.avgTicket * Number(ach.percent || 0) + Number(ach.fixed_usd || 0);
       if (ach.cap_usd !== null && ach.cap_usd !== undefined) {
         perTx = Math.min(perTx, Number(ach.cap_usd));

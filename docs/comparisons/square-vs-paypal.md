@@ -1,13 +1,14 @@
-# Square vs PayPal (US Small Businesses, 2026)
+# Square vs PayPal (US Businesses, 2026)
 
-| Criteria | Square (Free Plan) | PayPal (Expanded Cards) |
+| Criteria | Square | PayPal |
 | --- | --- | --- |
-| **Online card rate (US)** | 3.3% + $0.30 | 2.89% + $0.29 (Wallet: 3.49% + $0.49) |
-| **In-person card rate (US)** | 2.6% + $0.15 | 2.29% + $0.09 (Zettle) |
-| **ACH bank debit** | 1.0% ($1.00 min) | Not available as standard US ACH |
-| **Hardware & POS** | Full Square POS ecosystem | Zettle card readers |
+| **Pricing model** | flat_rate | flat_rate |
+| **Published rate** | 3.3% + $0.30 | 2.89% + $0.29 |
+| **$20k/mo ($50 avg ticket)** | $780.00/mo (3.90%) | $694.00/mo (3.47%) |
+| **$100k/mo ($100 avg ticket)** | $3,600.00/mo (3.60%) | $3,180.00/mo (3.18%) |
+| **ACH bank debit** | 1.0% ($1.00 min) | Not available |
+| **Merchant countries** | 8 | 200 |
+| **Tax responsibility** | Merchant handles tax | Merchant handles tax |
 
-## Cost Example ($20,000/mo online, $50 avg ticket = 400 tx/mo)
-- **PayPal Expanded (cards):** `$694.00/mo`
-- **Square Free (online):** `$780.00/mo`
-- **Difference:** PayPal Expanded is **$86.00/mo cheaper** for online card processing than Square's free plan.
+- **Square:** Omnichannel POS and online payment processor geared toward US retail, restaurants, and small service businesses. ([Official pricing](https://squareup.com/us/en/payments/our-fees))
+- **PayPal:** Widely recognized checkout brand offering PayPal Wallet, Venmo, Pay Later, and Expanded card processing. ([Official pricing](https://www.paypal.com/us/business/accept-payments/checkout))

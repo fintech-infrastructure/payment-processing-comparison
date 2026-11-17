@@ -1,18 +1,14 @@
-# Stripe vs Helcim (Flat-Rate vs Interchange-Plus, 2026)
+# Stripe vs Helcim (US Businesses, 2026)
 
 | Criteria | Stripe | Helcim |
 | --- | --- | --- |
-| **Pricing model** | Flat-rate (`2.9% + $0.30`) | Interchange-plus (`IC + 0.50% + $0.25`) |
-| **Monthly fee** | $0 | $0 |
-| **ACH rate** | 0.8% (capped at $5.00) | 0.5% + $0.25 (capped at $6.00) |
-| **Merchant countries** | ~46 countries | US and Canada only |
-| **Currencies** | 135+ currencies | USD / CAD |
+| **Pricing model** | flat_rate | interchange_plus |
+| **Published rate** | 2.9% + $0.30 | Interchange + 0.50% + $0.25 |
+| **$20k/mo ($50 avg ticket)** | $700.00/mo (3.50%) | $630.00/mo (3.15%) (est.) |
+| **$100k/mo ($100 avg ticket)** | $3,200.00/mo (3.20%) | $2,800.00/mo (2.80%) (est.) |
+| **ACH bank debit** | 0.8% (capped at $5.00) | 0.5% + $0.25 (capped at $6.00) |
+| **Merchant countries** | 46 | 2 |
+| **Tax responsibility** | Merchant handles tax | Merchant handles tax |
 
-## Why You Can't Compare `0.50%` Directly to `2.9%`
-Helcim's `0.50% + $0.25` is only the processor markup. Visa/Mastercard interchange (~`1.95% + $0.10` blended online estimate) is added on top.
-
-At `$20,000/mo` and `$50` avg ticket (400 tx/mo):
-- **Helcim (estimated):** `~$630.00/mo` (3.15% effective)
-- **Stripe:** `$700.00/mo` (3.50% effective)
-
-If your customers pay heavily with low-cost debit cards, Helcim saves even more. If you sell globally in 20+ currencies or need complex SaaS metered billing, Stripe is the better fit.
+- **Stripe:** Developer-first full-stack payment processor with broad APIs, subscriptions, and global card/wallet support. ([Official pricing](https://stripe.com/pricing))
+- **Helcim:** Transparent interchange-plus processor for US and Canadian SMBs with no monthly fee and automatic volume tiers. ([Official pricing](https://www.helcim.com/pricing/))

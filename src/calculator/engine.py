@@ -157,6 +157,8 @@ def _calculate_monthly_cost(
 
     if params.payment_type == "ach":
         ach = pricing["ach"]
+        if model == "custom":
+            return None, ach.get("display", "Custom ACH pricing")
         pct = float(ach.get("percent", 0.0))
         fixed = float(ach.get("fixed_usd", 0.0))
         cap = ach.get("cap_usd")

@@ -1,14 +1,14 @@
-# Stripe vs Paddle (Payment Processor vs Merchant of Record, 2026)
+# Stripe vs Paddle (US Businesses, 2026)
 
 | Criteria | Stripe | Paddle |
 | --- | --- | --- |
-| **Role** | Payment Processor | Merchant of Record (MoR) |
-| **Standard fee** | 2.9% + $0.30 (+1.5% intl, +1% FX) | 5.0% + $0.50 all-in |
-| **Global sales tax / VAT** | Merchant is legally responsible (Stripe Tax costs extra) | Paddle calculates, collects, and remits globally |
-| **Chargeback handling** | Merchant manages disputes | Paddle handles disputes as seller of record |
-| **Best for** | US-focused SaaS, marketplaces, custom apps | Global B2B/B2C SaaS avoiding multi-state/global tax filings |
+| **Pricing model** | flat_rate | flat_rate |
+| **Published rate** | 2.9% + $0.30 | 5.0% + $0.50 (MoR all-in) |
+| **$20k/mo ($50 avg ticket)** | $700.00/mo (3.50%) | $1,200.00/mo (6.00%) |
+| **$100k/mo ($100 avg ticket)** | $3,200.00/mo (3.20%) | $5,500.00/mo (5.50%) |
+| **ACH bank debit** | 0.8% (capped at $5.00) | Not available |
+| **Merchant countries** | 46 | 200 |
+| **Tax responsibility** | Merchant handles tax | Merchant of Record |
 
-## Cost Example ($20,000/mo, $50 avg ticket = 400 tx/mo)
-- **Stripe (domestic):** `$700.00/mo`
-- **Paddle (all-in MoR):** `$1,200.00/mo`
-- **Spread:** `$500.00/mo` — which buys global VAT/sales tax compliance, invoicing, and fraud/chargeback absorption.
+- **Stripe:** Developer-first full-stack payment processor with broad APIs, subscriptions, and global card/wallet support. ([Official pricing](https://stripe.com/pricing))
+- **Paddle:** Merchant of Record for B2B/B2C SaaS that handles global sales tax/VAT, subscriptions, and chargebacks in one 5% + $0.50 fee. ([Official pricing](https://www.paddle.com/pricing))

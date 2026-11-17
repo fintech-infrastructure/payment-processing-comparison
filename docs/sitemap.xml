@@ -5,6 +5,58 @@
     <lastmod>2026-11-17</lastmod>
   </url>
   <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/payment-gateway-api-comparison.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/ach-payment-processors.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/cheapest-payment-processors.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/merchant-of-record-comparison.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-alternatives.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/square-alternatives.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/paypal-alternatives.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/shopify-payments-alternatives.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/braintree-alternatives.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/authorize-net-alternatives.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/paddle-alternatives.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/clover-alternatives.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/high-risk-payment-processors.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
     <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-vs-square.html</loc>
     <lastmod>2026-11-17</lastmod>
   </url>
@@ -13,7 +65,11 @@
     <lastmod>2026-11-17</lastmod>
   </url>
   <url>
-    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-alternatives.html</loc>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/square-vs-paypal.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-vs-helcim.html</loc>
     <lastmod>2026-11-17</lastmod>
   </url>
   <url>
@@ -21,7 +77,71 @@
     <lastmod>2026-11-17</lastmod>
   </url>
   <url>
-    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/payment-gateway-api-comparison.html</loc>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-vs-braintree.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-vs-adyen.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-vs-dharma-merchant-services.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-vs-stax.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-vs-authorize-net.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-vs-lemon-squeezy.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-vs-2checkout.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/square-vs-clover.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/square-vs-toast.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/square-vs-sumup.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/square-vs-helcim.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/helcim-vs-stax.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/helcim-vs-dharma-merchant-services.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/helcim-vs-payment-depot.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/paddle-vs-lemon-squeezy.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/gocardless-vs-dwolla.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://fintech-infrastructure.github.io/payment-processing-comparison/authorize-net-vs-nmi.html</loc>
     <lastmod>2026-11-17</lastmod>
   </url>
 </urlset>

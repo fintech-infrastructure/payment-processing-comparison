@@ -19,7 +19,7 @@ class TestDataSchema(unittest.TestCase):
         provider_ids = {p["id"] for p in self.providers_data["providers"]}
         pricing_ids = {p["provider_id"] for p in self.pricing_data["pricing"]}
         self.assertEqual(provider_ids, pricing_ids)
-        self.assertGreaterEqual(len(provider_ids), 12)
+        self.assertGreaterEqual(len(provider_ids), 24)
 
     def test_required_provider_fields_and_country_separation(self) -> None:
         for provider in self.providers_data["providers"]:

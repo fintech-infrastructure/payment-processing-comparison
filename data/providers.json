@@ -409,6 +409,414 @@
       "high_risk_support": "no",
       "summary": "Developer-friendly Merchant of Record for SaaS, digital products, and license keys with built-in global tax compliance.",
       "verification_date": "2026-11-17"
+    },
+    {
+      "id": "dharma-merchant-services",
+      "name": "Dharma Merchant Services",
+      "category": "payment_processor",
+      "website": "https://www.dharmamerchantservices.com",
+      "pricing_url": "https://www.dharmamerchantservices.com/rates/",
+      "docs_url": "https://www.dharmamerchantservices.com/support/",
+      "merchant_countries": ["US"],
+      "merchant_country_count": 1,
+      "customer_countries": {
+        "scope": "global",
+        "currencies_supported": 1,
+        "notes": "US-registered merchants only; accepts international cards settling in USD."
+      },
+      "platforms": ["custom_website", "woocommerce", "pos_in_person"],
+      "payment_types": ["cards", "ach", "apple_pay", "google_pay"],
+      "billing_models": ["one_time", "subscriptions", "invoicing"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["NMI / MX Merchant API"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "pci_compliant_export",
+        "effort": "medium",
+        "notes": "No early termination fee; low interchange-plus markup makes it popular for US SMBs switching off flat-rate processors."
+      },
+      "high_risk_support": "no",
+      "summary": "Low-markup US interchange-plus merchant services provider with transparent pricing and no cancellation fees.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "payline-data",
+      "name": "Payline Data",
+      "category": "payment_processor",
+      "website": "https://paylinedata.com",
+      "pricing_url": "https://paylinedata.com/pricing/",
+      "docs_url": "https://paylinedata.com/developers/",
+      "merchant_countries": ["US"],
+      "merchant_country_count": 1,
+      "customer_countries": {
+        "scope": "global",
+        "currencies_supported": 1,
+        "notes": "US merchant accounts accepting international Visa, Mastercard, Amex, and Discover."
+      },
+      "platforms": ["custom_website", "woocommerce", "saas_billing", "pos_in_person"],
+      "payment_types": ["cards", "ach"],
+      "billing_models": ["one_time", "subscriptions", "invoicing"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["Payline REST API", "NMI Gateway"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "pci_compliant_export",
+        "effort": "medium",
+        "notes": "Offers interchange-plus accounts and evaluates select high-risk verticals case-by-case."
+      },
+      "high_risk_support": "case_by_case",
+      "summary": "US interchange-plus processor supporting standard and select high-risk online/B2B merchants.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "payment-depot",
+      "name": "Payment Depot",
+      "category": "payment_processor",
+      "website": "https://paymentdepot.com",
+      "pricing_url": "https://paymentdepot.com/pricing/",
+      "docs_url": "https://paymentdepot.com/integrations/",
+      "merchant_countries": ["US"],
+      "merchant_country_count": 1,
+      "customer_countries": {
+        "scope": "global",
+        "currencies_supported": 1,
+        "notes": "US-registered businesses settling in USD; accepts global cards."
+      },
+      "platforms": ["custom_website", "woocommerce", "pos_in_person"],
+      "payment_types": ["cards", "ach"],
+      "billing_models": ["one_time", "subscriptions", "invoicing"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["Authorize.net / NMI / Stax API"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "pci_compliant_export",
+        "effort": "medium",
+        "notes": "Membership-based interchange-plus model (Stax-owned) suited for merchants processing $10k+/mo."
+      },
+      "high_risk_support": "no",
+      "summary": "Membership interchange-plus processor charging 0% percentage markup over direct interchange.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "chase-payment-solutions",
+      "name": "Chase Payment Solutions",
+      "category": "payment_processor",
+      "website": "https://www.chase.com/business/payments",
+      "pricing_url": "https://www.chase.com/business/payments/pricing",
+      "docs_url": "https://developer.chase.com",
+      "merchant_countries": ["US"],
+      "merchant_country_count": 1,
+      "customer_countries": {
+        "scope": "global",
+        "currencies_supported": 1,
+        "notes": "US businesses (with same-day deposits available to Chase Business Checking accounts)."
+      },
+      "platforms": ["custom_website", "woocommerce", "pos_in_person"],
+      "payment_types": ["cards", "apple_pay", "google_pay"],
+      "billing_models": ["one_time", "subscriptions", "invoicing"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["Chase Commerce API"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "pci_compliant_export",
+        "effort": "medium",
+        "notes": "Direct bank-backed acquiring with predictable flat-rate pricing and same-day Chase checking deposits."
+      },
+      "high_risk_support": "no",
+      "summary": "Bank-owned flat-rate processor from JPMorgan Chase with 2.9% + $0.25 online pricing and same-day bank deposits.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "sumup",
+      "name": "SumUp",
+      "category": "payment_processor",
+      "website": "https://www.sumup.com/en-us/",
+      "pricing_url": "https://www.sumup.com/en-us/pricing/",
+      "docs_url": "https://developer.sumup.com",
+      "merchant_countries": ["US", "GB", "EU", "AU", "BR", "35+ countries"],
+      "merchant_country_count": 35,
+      "customer_countries": {
+        "scope": "regional",
+        "currencies_supported": 15,
+        "notes": "Popular micro-merchant POS and payment-link processor across US, UK, and Europe."
+      },
+      "platforms": ["custom_website", "pos_in_person"],
+      "payment_types": ["cards", "apple_pay", "google_pay"],
+      "billing_models": ["one_time", "invoicing"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["Node.js", "Python", "Go", "PHP", "iOS", "Android"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "limited",
+        "effort": "low",
+        "notes": "Simple flat-rate invoicing and lightweight POS without monthly software fees."
+      },
+      "high_risk_support": "no",
+      "summary": "Zero-monthly-fee POS and online invoicing processor built for solo operators and micro-merchants.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "clover",
+      "name": "Clover",
+      "category": "payment_processor",
+      "website": "https://www.clover.com",
+      "pricing_url": "https://www.clover.com/pricing",
+      "docs_url": "https://docs.clover.com",
+      "merchant_countries": ["US", "CA", "GB", "EU"],
+      "merchant_country_count": 12,
+      "customer_countries": {
+        "scope": "regional",
+        "currencies_supported": 6,
+        "notes": "Fiserv-owned POS and omnichannel commerce platform."
+      },
+      "platforms": ["custom_website", "woocommerce", "pos_in_person"],
+      "payment_types": ["cards", "apple_pay", "google_pay"],
+      "billing_models": ["one_time", "subscriptions", "invoicing"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["REST API", "Clover SDK (Android/iOS)"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "limited",
+        "effort": "high",
+        "notes": "Hardware is often tied to the acquiring ISO/reseller; check lease and contract terms carefully."
+      },
+      "high_risk_support": "no",
+      "summary": "Fiserv-owned retail and restaurant POS hardware + online ordering platform.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "toast",
+      "name": "Toast",
+      "category": "payment_processor",
+      "website": "https://pos.toasttab.com",
+      "pricing_url": "https://pos.toasttab.com/pricing",
+      "docs_url": "https://doc.toasttab.com",
+      "merchant_countries": ["US", "CA", "GB", "IE"],
+      "merchant_country_count": 4,
+      "customer_countries": {
+        "scope": "regional",
+        "currencies_supported": 4,
+        "notes": "Restaurant-specific POS, kitchen display, and online ordering ecosystem."
+      },
+      "platforms": ["pos_in_person"],
+      "payment_types": ["cards", "apple_pay", "google_pay"],
+      "billing_models": ["one_time"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": false,
+        "sdks": ["Toast Partner REST API"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "limited",
+        "effort": "high",
+        "notes": "Proprietary restaurant hardware and payment processing; switching requires replacing POS terminals."
+      },
+      "high_risk_support": "no",
+      "summary": "Vertical restaurant POS and online ordering processor with starter $0/mo software tier.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "nmi",
+      "name": "NMI",
+      "category": "gateway",
+      "website": "https://www.nmi.com",
+      "pricing_url": "https://www.nmi.com/pricing/",
+      "docs_url": "https://secure.nmi.com/merchants/resources/integration/integration_portal.php",
+      "merchant_countries": ["US", "CA", "GB", "EU", "AU"],
+      "merchant_country_count": 30,
+      "customer_countries": {
+        "scope": "global",
+        "currencies_supported": 135,
+        "notes": "Gateway-only platform connecting to 200+ underlying merchant acquirers."
+      },
+      "platforms": ["custom_website", "woocommerce", "saas_billing"],
+      "payment_types": ["cards", "ach", "apple_pay", "google_pay"],
+      "billing_models": ["one_time", "subscriptions", "invoicing"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["Direct Post API", "Collect.js", "PHP", "Python", "Node.js"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "pci_compliant_export",
+        "effort": "low",
+        "notes": "Gateway abstraction lets you swap backend merchant processors or route multi-MID high-risk volume."
+      },
+      "high_risk_support": "specialized_required",
+      "summary": "Flexible gateway-only platform popular with multi-acquirer, ISO, and high-risk US merchants.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "durango-merchant-services",
+      "name": "Durango Merchant Services",
+      "category": "payment_processor",
+      "website": "https://durangomerchantservices.com",
+      "pricing_url": "https://durangomerchantservices.com/high-risk-merchant-accounts/",
+      "docs_url": "https://durangomerchantservices.com/payment-gateways/",
+      "merchant_countries": ["US", "CA", "GB", "EU"],
+      "merchant_country_count": 20,
+      "customer_countries": {
+        "scope": "global",
+        "currencies_supported": 25,
+        "notes": "Specialized underwriting for verticals declined by Stripe, Square, and PayPal."
+      },
+      "platforms": ["custom_website", "woocommerce", "shopify"],
+      "payment_types": ["cards", "ach"],
+      "billing_models": ["one_time", "subscriptions"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["NMI / Authorize.net Compatible"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "pci_compliant_export",
+        "effort": "medium",
+        "notes": "Underwrites high-risk categories (supplements, CBD, coaching, firearms, adult) via NMI/Authorize.net."
+      },
+      "high_risk_support": "specialized_required",
+      "summary": "High-risk merchant account broker for industries rejected or frozen by flat-rate aggregators.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "2checkout",
+      "name": "2Checkout (Verifone)",
+      "category": "merchant_of_record",
+      "website": "https://www.2checkout.com",
+      "pricing_url": "https://www.2checkout.com/pricing/",
+      "docs_url": "https://verifone.cloud/docs/2checkout",
+      "merchant_countries": ["US", "CA", "GB", "EU", "Global (180+ countries)"],
+      "merchant_country_count": 180,
+      "customer_countries": {
+        "scope": "global",
+        "currencies_supported": 45,
+        "notes": "Global Merchant of Record and cross-border checkout supporting 45+ payment methods and 100+ currencies."
+      },
+      "platforms": ["custom_website", "shopify", "woocommerce", "saas_billing"],
+      "payment_types": ["cards", "paypal_wallet", "apple_pay"],
+      "billing_models": ["one_time", "subscriptions", "invoicing"],
+      "tax_responsibility": "merchant_of_record",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["PHP", "Python", "Ruby", "Node.js", "Java", ".NET"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "limited",
+        "effort": "high",
+        "notes": "2Sell starts at 3.5% + $0.35; 2Subscribe (4.5% + $0.45) and 2Monetize MoR (6.0% + $0.60) add subscription/tax tools."
+      },
+      "high_risk_support": "no",
+      "summary": "Verifone-owned global Merchant of Record and cross-border SaaS/e-commerce platform.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "fastspring",
+      "name": "FastSpring",
+      "category": "merchant_of_record",
+      "website": "https://fastspring.com",
+      "pricing_url": "https://fastspring.com/pricing/",
+      "docs_url": "https://developer.fastspring.com",
+      "merchant_countries": ["US", "CA", "GB", "EU", "Global (200+ territories)"],
+      "merchant_country_count": 200,
+      "customer_countries": {
+        "scope": "global",
+        "currencies_supported": 25,
+        "notes": "Full-service B2B/B2C software and SaaS Merchant of Record handling global VAT/sales tax and localized checkouts."
+      },
+      "platforms": ["custom_website", "saas_billing"],
+      "payment_types": ["cards", "ach", "paypal_wallet", "apple_pay"],
+      "billing_models": ["one_time", "subscriptions", "metered_billing", "invoicing"],
+      "tax_responsibility": "merchant_of_record",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["Store Builder Library (JS)", "REST API"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "limited",
+        "effort": "high",
+        "notes": "Custom volume pricing; strong alternative to Paddle for established B2B SaaS and desktop software."
+      },
+      "high_risk_support": "no",
+      "summary": "Established B2B/B2C software Merchant of Record with custom volume pricing and global tax compliance.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "dwolla",
+      "name": "Dwolla",
+      "category": "bank_debit",
+      "website": "https://www.dwolla.com",
+      "pricing_url": "https://www.dwolla.com/pricing/",
+      "docs_url": "https://developers.dwolla.com",
+      "merchant_countries": ["US"],
+      "merchant_country_count": 1,
+      "customer_countries": {
+        "scope": "regional",
+        "currencies_supported": 1,
+        "notes": "US-only ACH, Same-Day ACH, and RTP bank-to-bank transfer API."
+      },
+      "platforms": ["custom_website", "saas_billing"],
+      "payment_types": ["ach"],
+      "billing_models": ["one_time", "subscriptions", "invoicing"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["Node.js", "Python", "Ruby", "PHP", "Java", ".NET", "Kotlin"],
+        "hosted_checkout": false
+      },
+      "migration": {
+        "token_portability": "limited",
+        "effort": "medium",
+        "notes": "API-first US ACH and account-to-account transfer infrastructure; custom platform pricing."
+      },
+      "high_risk_support": "no",
+      "summary": "Developer-focused US ACH and Same-Day ACH bank transfer API (no card processing).",
+      "verification_date": "2026-11-17"
     }
   ]
 }

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Payment Gateway API Comparison (2026): SDKs, Webhooks &amp; Billing</title>
-  <meta name="description" content="Compare payment gateway APIs across Stripe, Braintree, Square, PayPal, Authorize.net, Helcim, Adyen, GoCardless, Paddle, and Lemon Squeezy.">
+  <meta name="description" content="Compare REST APIs, webhooks, sandboxes, and SDKs across 20+ payment providers.">
   <link rel="canonical" href="https://fintech-infrastructure.github.io/payment-processing-comparison/payment-gateway-api-comparison.html">
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -17,36 +17,21 @@
       <nav class="top-nav">
         <a href="./">Fee Calculator</a>
         <a href="stripe-vs-square.html">Stripe vs Square</a>
-        <a href="stripe-vs-paypal.html">Stripe vs PayPal</a>
         <a href="stripe-alternatives.html">Stripe Alternatives</a>
+        <a href="cheapest-payment-processors.html">Cheapest Processors</a>
+        <a href="payment-gateway-api-comparison.html">API Comparison</a>
       </nav>
     </div>
   </header>
   <main class="container">
     <section class="hero">
       <h1>Payment Gateway API Comparison</h1>
-      <p class="lead">Compare REST APIs, webhooks, test sandboxes, SDKs, and metered billing support.</p>
+      <p class="lead">Compare REST APIs, webhooks, test sandboxes, SDKs, and billing models.</p>
     </section>
-    <section class="card">
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Provider</th><th>REST &amp; Webhooks</th><th>Official SDKs</th><th>Subscriptions / Metered</th></tr></thead>
-          <tbody>
-            <tr><td><strong>Stripe</strong></td><td>Yes / Yes</td><td>Node, Python, Ruby, Go, Java, PHP, .NET, iOS, Android</td><td>Subscriptions + Metered</td></tr>
-            <tr><td><strong>Braintree</strong></td><td>Yes / Yes</td><td>Node, Python, Ruby, Java, PHP, .NET, iOS, Android</td><td>Subscriptions</td></tr>
-            <tr><td><strong>Square</strong></td><td>Yes / Yes</td><td>Node, Python, Ruby, Java, PHP, .NET, iOS, Android</td><td>Subscriptions</td></tr>
-            <tr><td><strong>PayPal</strong></td><td>Yes / Yes</td><td>Node, Python, Java, PHP, .NET, JS SDK</td><td>Subscriptions</td></tr>
-            <tr><td><strong>Authorize.net</strong></td><td>Yes / Yes</td><td>Node, Python, Ruby, Java, PHP, .NET</td><td>Recurring Billing (ARB)</td></tr>
-            <tr><td><strong>Helcim</strong></td><td>Yes / Yes</td><td>REST API, HelcimPay.js</td><td>Subscriptions</td></tr>
-            <tr><td><strong>Adyen</strong></td><td>Yes / Yes</td><td>Node, Python, Ruby, Go, Java, PHP, .NET, iOS, Android</td><td>Subscriptions + Metered</td></tr>
-            <tr><td><strong>GoCardless</strong></td><td>Yes / Yes</td><td>Node, Python, Ruby, Java, PHP, .NET</td><td>ACH / Direct Debit Mandates</td></tr>
-            <tr><td><strong>Paddle</strong></td><td>Yes / Yes</td><td>Node, Python, Go, PHP, Paddle.js</td><td>Subscriptions + Metered (MoR)</td></tr>
-            <tr><td><strong>Lemon Squeezy</strong></td><td>Yes / Yes</td><td>JS/TS, Lemon.js, REST</td><td>Subscriptions + Metered (MoR)</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <a class="cta-link" href="./">Check fees in the calculator</a>
-    </section>
+    <section class="card"><div class="table-wrap"><table>
+      <thead><tr><th>Provider</th><th>Webhooks / Sandbox</th><th>SDKs</th><th>Billing Models</th></tr></thead>
+      <tbody><tr><td><strong>Stripe</strong></td><td>Yes / Yes</td><td>Node.js, Python, Ruby, Go, Java…</td><td>one time, subscriptions, metered billing, invoicing</td></tr><tr><td><strong>Square</strong></td><td>Yes / Yes</td><td>Node.js, Python, Ruby, Java, PHP…</td><td>one time, subscriptions, invoicing</td></tr><tr><td><strong>PayPal</strong></td><td>Yes / Yes</td><td>Node.js, Python, Java, PHP, .NET…</td><td>one time, subscriptions, invoicing</td></tr><tr><td><strong>Braintree</strong></td><td>Yes / Yes</td><td>Node.js, Python, Ruby, Java, PHP…</td><td>one time, subscriptions, invoicing</td></tr><tr><td><strong>Helcim</strong></td><td>Yes / Yes</td><td>REST API, HelcimPay.js</td><td>one time, subscriptions, invoicing</td></tr><tr><td><strong>Authorize.net</strong></td><td>Yes / Yes</td><td>Node.js, Python, Ruby, Java, PHP…</td><td>one time, subscriptions, invoicing</td></tr><tr><td><strong>Stax</strong></td><td>Yes / Yes</td><td>REST API, Stax.js</td><td>one time, subscriptions, invoicing</td></tr><tr><td><strong>Adyen</strong></td><td>Yes / Yes</td><td>Node.js, Python, Ruby, Go, Java…</td><td>one time, subscriptions, metered billing</td></tr><tr><td><strong>GoCardless</strong></td><td>Yes / Yes</td><td>Node.js, Python, Ruby, Java, PHP…</td><td>one time, subscriptions, invoicing</td></tr><tr><td><strong>Paddle</strong></td><td>Yes / Yes</td><td>Node.js, Python, Go, PHP, Paddle.js</td><td>one time, subscriptions, metered billing, invoicing</td></tr><tr><td><strong>Lemon Squeezy</strong></td><td>Yes / Yes</td><td>JavaScript/TypeScript, Lemon.js, REST API</td><td>one time, subscriptions, metered billing</td></tr><tr><td><strong>Dharma Merchant Services</strong></td><td>Yes / Yes</td><td>NMI / MX Merchant API</td><td>one time, subscriptions, invoicing</td></tr><tr><td><strong>Payline Data</strong></td><td>Yes / Yes</td><td>Payline REST API, NMI Gateway</td><td>one time, subscriptions, invoicing</td></tr><tr><td><strong>Payment Depot</strong></td><td>Yes / Yes</td><td>Authorize.net / NMI / Stax API</td><td>one time, subscriptions, invoicing</td></tr><tr><td><strong>Chase Payment Solutions</strong></td><td>Yes / Yes</td><td>Chase Commerce API</td><td>one time, subscriptions, invoicing</td></tr><tr><td><strong>SumUp</strong></td><td>Yes / Yes</td><td>Node.js, Python, Go, PHP, iOS…</td><td>one time, invoicing</td></tr><tr><td><strong>Clover</strong></td><td>Yes / Yes</td><td>REST API, Clover SDK (Android/iOS)</td><td>one time, subscriptions, invoicing</td></tr><tr><td><strong>Toast</strong></td><td>Yes / No</td><td>Toast Partner REST API</td><td>one time</td></tr><tr><td><strong>NMI</strong></td><td>Yes / Yes</td><td>Direct Post API, Collect.js, PHP, Python, Node.js</td><td>one time, subscriptions, invoicing</td></tr><tr><td><strong>Durango Merchant Services</strong></td><td>Yes / Yes</td><td>NMI / Authorize.net Compatible</td><td>one time, subscriptions</td></tr><tr><td><strong>2Checkout (Verifone)</strong></td><td>Yes / Yes</td><td>PHP, Python, Ruby, Node.js, Java…</td><td>one time, subscriptions, invoicing</td></tr><tr><td><strong>FastSpring</strong></td><td>Yes / Yes</td><td>Store Builder Library (JS), REST API</td><td>one time, subscriptions, metered billing, invoicing</td></tr><tr><td><strong>Dwolla</strong></td><td>Yes / Yes</td><td>Node.js, Python, Ruby, PHP, Java…</td><td>one time, subscriptions, invoicing</td></tr></tbody></table></div>
+      <a class="cta-link" href="./">Check fees in calculator</a></section>
   </main>
   <footer class="site-footer"><div class="container">Verified 2026-11-17. <a href="./">Back to Calculator</a></div></footer>
 </body>
