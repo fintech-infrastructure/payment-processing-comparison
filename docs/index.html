@@ -6,6 +6,8 @@
   <title>Payment Processor Comparison &amp; Fee Calculator (US Businesses)</title>
   <meta name="description" content="Compare real payment processing fees, platform compatibility, ACH, subscriptions, and switching savings across Stripe, Square, PayPal, Helcim, Braintree, Stax, and Merchant of Record platforms.">
   <link rel="canonical" href="https://fintech-infrastructure.github.io/payment-processing-comparison/">
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
@@ -25,12 +27,12 @@
 
   <main class="container">
     <section class="hero">
-      <h1>Compare fees. Check compatibility. Find a better fit.</h1>
-      <p class="lead">Find the cheapest compatible payment processor for your business — based on real fees, monthly sales volume, average ticket, country, platform, and switching savings.</p>
+      <h1>Compare fees and processor compatibility</h1>
+      <p class="lead">Calculate real monthly fees by sales volume, platform, country, and switching savings.</p>
       <div class="pill-row">
         <span class="pill">1. Compatibility First</span>
         <span class="pill">2. Switching Calculator</span>
-        <span class="pill">3. Transparent Sources (Verified 2026-11-17)</span>
+        <span class="pill">3. Official Sources (Verified 2026-11-17)</span>
       </div>
     </section>
 
@@ -96,7 +98,7 @@
           <input id="intlShare" type="number" min="0" max="100" step="5" value="0">
         </div>
         <div class="field">
-          <label for="currentProvider">I'm Currently Using (Switching Calc)</label>
+          <label for="currentProvider">Current Processor (Switching Calc)</label>
           <select id="currentProvider">
             <option value="">None (New setup)</option>
             <option value="stripe" selected>Stripe</option>
@@ -111,7 +113,7 @@
 
       <div class="checkbox-row">
         <input id="requireMor" type="checkbox">
-        <label for="requireMor">Require <strong>Merchant of Record (MoR)</strong> — provider handles global sales tax / VAT remittance</label>
+        <label for="requireMor">Require <strong>Merchant of Record (MoR)</strong>: provider handles global sales tax / VAT remittance</label>
       </div>
     </section>
 
@@ -149,7 +151,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="guides-section">
       <h2>Decision Guides &amp; Comparisons</h2>
       <div class="guides-grid">
         <a class="guide-card" href="stripe-vs-square.html">
