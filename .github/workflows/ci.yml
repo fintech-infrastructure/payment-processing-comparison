@@ -1,0 +1,22 @@
+name: Validate Data & Run Calculator Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run schema and calculator unit tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Verify CLI smoke run
+        run: python3 -m src.calculator.cli --volume 20000 --ticket 50 --platform custom_website --current stripe
+      - name: Verify docs/data matches data/
+        run: diff -u data/providers.json docs/data/providers.json && diff -u data/pricing.json docs/data/pricing.json

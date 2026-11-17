@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fintech-infrastructure.github.io/payment-processing-comparison/sitemap.xml

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Processor Comparison &amp; Fee Calculator (US Businesses)</title>
+  <meta name="description" content="Compare real payment processing fees, platform compatibility, ACH, subscriptions, and switching savings across Stripe, Square, PayPal, Helcim, Braintree, Stax, and Merchant of Record platforms.">
+  <link rel="canonical" href="https://fintech-infrastructure.github.io/payment-processing-comparison/">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./">Payment Processor Comparison</a>
+      <nav class="top-nav">
+        <a href="stripe-vs-square.html">Stripe vs Square</a>
+        <a href="stripe-vs-paypal.html">Stripe vs PayPal</a>
+        <a href="stripe-alternatives.html">Stripe Alternatives</a>
+        <a href="stripe-vs-paddle.html">Stripe vs Paddle</a>
+        <a href="payment-gateway-api-comparison.html">API Comparison</a>
+        <a href="https://github.com/fintech-infrastructure/payment-processing-comparison" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Compare fees. Check compatibility. Find a better fit.</h1>
+      <p class="lead">Find the cheapest compatible payment processor for your business — based on real fees, monthly sales volume, average ticket, country, platform, and switching savings.</p>
+      <div class="pill-row">
+        <span class="pill">1. Compatibility First</span>
+        <span class="pill">2. Switching Calculator</span>
+        <span class="pill">3. Transparent Sources (Verified 2026-11-17)</span>
+      </div>
+    </section>
+
+    <section class="card" aria-label="Payment Processing Fee Calculator">
+      <h2>Payment Processing Fee &amp; Compatibility Calculator</h2>
+      <div class="form-grid">
+        <div class="field">
+          <label for="volume">Monthly Sales Volume (USD)</label>
+          <input id="volume" type="number" min="100" step="500" value="20000">
+        </div>
+        <div class="field">
+          <label for="ticket">Average Transaction (USD)</label>
+          <input id="ticket" type="number" min="1" step="5" value="50">
+        </div>
+        <div class="field">
+          <label for="channel">Sales Channel</label>
+          <select id="channel">
+            <option value="online" selected>Online (Card-Not-Present)</option>
+            <option value="in_person">In-Person (POS / Card-Present)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="paymentType">Payment Method</label>
+          <select id="paymentType">
+            <option value="cards" selected>Credit &amp; Debit Cards</option>
+            <option value="ach">ACH / Bank Debit</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="platform">Platform / Stack</label>
+          <select id="platform">
+            <option value="any">Any Platform</option>
+            <option value="custom_website" selected>Custom Website / API</option>
+            <option value="shopify">Shopify</option>
+            <option value="woocommerce">WooCommerce</option>
+            <option value="mobile_app">Mobile App</option>
+            <option value="saas_billing">SaaS Billing</option>
+            <option value="pos_in_person">In-Person POS</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="billingModel">Billing Model</label>
+          <select id="billingModel">
+            <option value="any" selected>Any Billing</option>
+            <option value="one_time">One-time Checkout</option>
+            <option value="subscriptions">Subscriptions</option>
+            <option value="metered_billing">Metered / Usage Billing</option>
+            <option value="invoicing">Invoicing</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="merchantCountry">Merchant Country</label>
+          <select id="merchantCountry">
+            <option value="US" selected>United States (US)</option>
+            <option value="CA">Canada (CA)</option>
+            <option value="GB">United Kingdom (GB)</option>
+            <option value="EU">European Union (EU)</option>
+            <option value="AU">Australia (AU)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="intlShare">International Cards (%)</label>
+          <input id="intlShare" type="number" min="0" max="100" step="5" value="0">
+        </div>
+        <div class="field">
+          <label for="currentProvider">I'm Currently Using (Switching Calc)</label>
+          <select id="currentProvider">
+            <option value="">None (New setup)</option>
+            <option value="stripe" selected>Stripe</option>
+            <option value="square">Square</option>
+            <option value="paypal">PayPal</option>
+            <option value="braintree">Braintree</option>
+            <option value="authorize-net">Authorize.net</option>
+            <option value="shopify-payments">Shopify Payments</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="checkbox-row">
+        <input id="requireMor" type="checkbox">
+        <label for="requireMor">Require <strong>Merchant of Record (MoR)</strong> — provider handles global sales tax / VAT remittance</label>
+      </div>
+    </section>
+
+    <section class="card">
+      <div id="summaryBar" class="summary-bar"></div>
+      <h3>Compatible Processors (Sorted by Estimated Monthly Cost)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Processor</th>
+              <th>Published Rate</th>
+              <th>Est. Monthly Fees</th>
+              <th>Switching Savings</th>
+              <th>Compatibility &amp; Migration Notes</th>
+            </tr>
+          </thead>
+          <tbody id="compatibleBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="excludedSection" class="card">
+      <h3>Excluded (Incompatible with Your Selection)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Processor</th>
+              <th>Why Excluded</th>
+            </tr>
+          </thead>
+          <tbody id="excludedBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Decision Guides &amp; Comparisons</h2>
+      <div class="guides-grid">
+        <a class="guide-card" href="stripe-vs-square.html">
+          <h3>Stripe vs Square</h3>
+          <p>Online vs in-person rates, POS lock-in, and $20k/mo fee breakdown.</p>
+        </a>
+        <a class="guide-card" href="stripe-vs-paypal.html">
+          <h3>Stripe vs PayPal</h3>
+          <p>Expanded card rates vs PayPal Wallet/Venmo fees and vault portability.</p>
+        </a>
+        <a class="guide-card" href="stripe-alternatives.html">
+          <h3>Stripe Alternatives</h3>
+          <p>Helcim, Stax, Braintree, Paddle, and GoCardless compared by switching reason.</p>
+        </a>
+        <a class="guide-card" href="stripe-vs-paddle.html">
+          <h3>Stripe vs Paddle (MoR)</h3>
+          <p>When paying 5% + $0.50 all-in beats managing global sales tax yourself.</p>
+        </a>
+        <a class="guide-card" href="payment-gateway-api-comparison.html">
+          <h3>Payment Gateway APIs</h3>
+          <p>SDKs, webhooks, sandboxes, and metered billing for developers.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      Open-source dataset maintained at <a href="https://github.com/fintech-infrastructure/payment-processing-comparison">fintech-infrastructure/payment-processing-comparison</a>. Rates verified 2026-11-17 from official provider pricing pages. Interchange-plus figures are estimates using a documented US card-not-present baseline.
+    </div>
+  </footer>
+
+  <script src="assets/calculator.js"></script>
+</body>
+</html>

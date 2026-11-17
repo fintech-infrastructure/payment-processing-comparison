@@ -1,0 +1,11 @@
+# Payment Processor Comparison
+
+Open-source comparison of payment processors for US businesses: real transaction fees, compatibility-first filtering, switching savings, and API support.
+
+- Interactive Calculator: https://fintech-infrastructure.github.io/payment-processing-comparison/
+- Stripe vs Square: https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-vs-square.html
+- Stripe vs PayPal: https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-vs-paypal.html
+- Stripe Alternatives: https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-alternatives.html
+- Stripe vs Paddle (MoR): https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-vs-paddle.html
+- Payment Gateway API Comparison: https://fintech-infrastructure.github.io/payment-processing-comparison/payment-gateway-api-comparison.html
+- Raw JSON Data: data/providers.json, data/pricing.json

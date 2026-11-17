@@ -1,0 +1,307 @@
+{
+  "schema_version": "1.0.0",
+  "last_verified": "2026-11-17",
+  "interchange_benchmark": {
+    "description": "Estimated average US domestic card-not-present (CNP) interchange + card network assessment baseline used solely when modeling interchange-plus providers. Actual interchange varies by card type (debit vs rewards credit vs corporate).",
+    "cnp_percent": 0.0195,
+    "cnp_fixed_usd": 0.10,
+    "cp_percent": 0.0155,
+    "cp_fixed_usd": 0.08
+  },
+  "pricing": [
+    {
+      "provider_id": "stripe",
+      "plan_name": "Standard (Pay-as-you-go)",
+      "pricing_model": "flat_rate",
+      "is_estimated": false,
+      "monthly_fee_usd": 0.0,
+      "online_card": {
+        "percent": 0.029,
+        "fixed_usd": 0.30,
+        "display": "2.9% + $0.30"
+      },
+      "in_person_card": {
+        "percent": 0.027,
+        "fixed_usd": 0.05,
+        "display": "2.7% + $0.05"
+      },
+      "ach": {
+        "percent": 0.008,
+        "fixed_usd": 0.0,
+        "cap_usd": 5.0,
+        "min_usd": 0.0,
+        "display": "0.8% (capped at $5.00)"
+      },
+      "international_card_surcharge_percent": 0.015,
+      "currency_conversion_surcharge_percent": 0.01,
+      "notes": "Published US domestic standard pricing. Custom volume discounts available above ~$100k/mo.",
+      "source_url": "https://stripe.com/pricing",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "square",
+      "plan_name": "Square Free (Online)",
+      "pricing_model": "flat_rate",
+      "is_estimated": false,
+      "monthly_fee_usd": 0.0,
+      "online_card": {
+        "percent": 0.033,
+        "fixed_usd": 0.30,
+        "display": "3.3% + $0.30"
+      },
+      "in_person_card": {
+        "percent": 0.026,
+        "fixed_usd": 0.15,
+        "display": "2.6% + $0.15"
+      },
+      "ach": {
+        "percent": 0.01,
+        "fixed_usd": 0.0,
+        "cap_usd": null,
+        "min_usd": 1.0,
+        "display": "1.0% ($1.00 min)"
+      },
+      "international_card_surcharge_percent": 0.0,
+      "currency_conversion_surcharge_percent": 0.0,
+      "notes": "Square Free online checkout is 3.3% + $0.30 (Square Plus/Premium plans lower online rate to 2.9% + $0.30 for a monthly fee).",
+      "source_url": "https://squareup.com/us/en/payments/our-fees",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "paypal",
+      "plan_name": "PayPal Expanded (Advanced Credit & Debit Card Payments)",
+      "pricing_model": "flat_rate",
+      "is_estimated": false,
+      "monthly_fee_usd": 0.0,
+      "online_card": {
+        "percent": 0.0289,
+        "fixed_usd": 0.29,
+        "display": "2.89% + $0.29"
+      },
+      "in_person_card": {
+        "percent": 0.0229,
+        "fixed_usd": 0.09,
+        "display": "2.29% + $0.09"
+      },
+      "ach": null,
+      "international_card_surcharge_percent": 0.015,
+      "currency_conversion_surcharge_percent": 0.03,
+      "notes": "Applies to Advanced Credit & Debit Card Payments. Standard PayPal Wallet / Venmo / PayPal Checkout buttons are 3.49% + $0.49.",
+      "source_url": "https://www.paypal.com/us/business/accept-payments/checkout",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "braintree",
+      "plan_name": "Standard US Merchant",
+      "pricing_model": "flat_rate",
+      "is_estimated": false,
+      "monthly_fee_usd": 0.0,
+      "online_card": {
+        "percent": 0.0259,
+        "fixed_usd": 0.49,
+        "display": "2.59% + $0.49"
+      },
+      "in_person_card": null,
+      "ach": {
+        "percent": 0.0075,
+        "fixed_usd": 0.0,
+        "cap_usd": 5.0,
+        "min_usd": 0.0,
+        "display": "0.75% (capped at $5.00)"
+      },
+      "international_card_surcharge_percent": 0.01,
+      "currency_conversion_surcharge_percent": 0.01,
+      "notes": "Lower percentage (2.59%) but higher fixed fee ($0.49) than Stripe, favoring higher average ticket sizes.",
+      "source_url": "https://www.braintreepayments.com/braintree-pricing",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "helcim",
+      "plan_name": "Interchange-Plus (Starting Tier)",
+      "pricing_model": "interchange_plus",
+      "is_estimated": true,
+      "monthly_fee_usd": 0.0,
+      "online_card": {
+        "markup_percent": 0.005,
+        "markup_fixed_usd": 0.25,
+        "display": "Interchange + 0.50% + $0.25"
+      },
+      "in_person_card": {
+        "markup_percent": 0.004,
+        "markup_fixed_usd": 0.08,
+        "display": "Interchange + 0.40% + $0.08"
+      },
+      "ach": {
+        "percent": 0.005,
+        "fixed_usd": 0.25,
+        "cap_usd": 6.0,
+        "min_usd": 0.0,
+        "display": "0.5% + $0.25 (capped at $6.00)"
+      },
+      "international_card_surcharge_percent": 0.0,
+      "currency_conversion_surcharge_percent": 0.0,
+      "notes": "Published markup is added on top of underlying Visa/MC/Amex interchange. Automatic volume discounts apply above $50k/mo.",
+      "source_url": "https://www.helcim.com/pricing/",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "authorize-net",
+      "plan_name": "All-in-One (Payment Gateway + Merchant Account)",
+      "pricing_model": "flat_rate",
+      "is_estimated": false,
+      "monthly_fee_usd": 25.0,
+      "online_card": {
+        "percent": 0.029,
+        "fixed_usd": 0.30,
+        "display": "2.9% + $0.30 (+ $25/mo)"
+      },
+      "in_person_card": null,
+      "ach": {
+        "percent": 0.0075,
+        "fixed_usd": 0.0,
+        "cap_usd": null,
+        "min_usd": 0.0,
+        "display": "0.75% (eCheck)"
+      },
+      "international_card_surcharge_percent": 0.015,
+      "currency_conversion_surcharge_percent": 0.0,
+      "notes": "Gateway-only plan is $25/mo + $0.10/tx + $0.10 daily batch fee if bringing your own merchant account.",
+      "source_url": "https://www.authorize.net/sign-up/pricing.html",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "stax",
+      "plan_name": "Growth Membership (0% Interchange Markup)",
+      "pricing_model": "subscription_interchange_plus",
+      "is_estimated": true,
+      "monthly_fee_usd": 99.0,
+      "online_card": {
+        "markup_percent": 0.0,
+        "markup_fixed_usd": 0.15,
+        "display": "Interchange + 0% + $0.15 (+ $99/mo)"
+      },
+      "in_person_card": {
+        "markup_percent": 0.0,
+        "markup_fixed_usd": 0.08,
+        "display": "Interchange + 0% + $0.08 (+ $99/mo)"
+      },
+      "ach": {
+        "percent": 0.0,
+        "fixed_usd": 0.0,
+        "cap_usd": null,
+        "min_usd": 0.0,
+        "display": "Included / custom ACH add-on"
+      },
+      "international_card_surcharge_percent": 0.0,
+      "currency_conversion_surcharge_percent": 0.0,
+      "notes": "0% percentage markup over direct interchange plus per-tx fee and $99/mo+ subscription (scales with annual volume).",
+      "source_url": "https://staxpayments.com/pricing/",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "shopify-payments",
+      "plan_name": "Basic Shopify Plan",
+      "pricing_model": "flat_rate",
+      "is_estimated": false,
+      "monthly_fee_usd": 0.0,
+      "online_card": {
+        "percent": 0.029,
+        "fixed_usd": 0.30,
+        "display": "2.9% + $0.30 (Basic)"
+      },
+      "in_person_card": {
+        "percent": 0.026,
+        "fixed_usd": 0.10,
+        "display": "2.6% + $0.10 (Basic)"
+      },
+      "ach": null,
+      "international_card_surcharge_percent": 0.01,
+      "currency_conversion_surcharge_percent": 0.015,
+      "notes": "Requires a Shopify subscription ($39/mo+ Basic). Higher Shopify plans reduce online card rates to 2.7% + $0.30 or 2.5% + $0.30.",
+      "source_url": "https://www.shopify.com/pricing",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "adyen",
+      "plan_name": "Enterprise Interchange++",
+      "pricing_model": "custom",
+      "is_estimated": true,
+      "monthly_fee_usd": 0.0,
+      "online_card": {
+        "percent": null,
+        "fixed_usd": null,
+        "display": "Custom pricing (Interchange++ + ~$0.13)"
+      },
+      "in_person_card": {
+        "percent": null,
+        "fixed_usd": null,
+        "display": "Custom pricing"
+      },
+      "ach": null,
+      "international_card_surcharge_percent": 0.0,
+      "currency_conversion_surcharge_percent": 0.0,
+      "notes": "Custom pricing; no standard published flat rate. Best suited for mid-market and enterprise volume.",
+      "source_url": "https://www.adyen.com/pricing",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "gocardless",
+      "plan_name": "Standard US ACH",
+      "pricing_model": "flat_rate",
+      "is_estimated": false,
+      "monthly_fee_usd": 0.0,
+      "online_card": null,
+      "in_person_card": null,
+      "ach": {
+        "percent": 0.01,
+        "fixed_usd": 0.25,
+        "cap_usd": 4.0,
+        "min_usd": 0.0,
+        "display": "1.0% + $0.25 (capped at $4.00)"
+      },
+      "international_card_surcharge_percent": 0.0,
+      "currency_conversion_surcharge_percent": 0.02,
+      "notes": "Bank-to-bank ACH / Direct Debit only; does not process credit or debit cards.",
+      "source_url": "https://gocardless.com/en-us/pricing/",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "paddle",
+      "plan_name": "Standard Merchant of Record",
+      "pricing_model": "flat_rate",
+      "is_estimated": false,
+      "monthly_fee_usd": 0.0,
+      "online_card": {
+        "percent": 0.05,
+        "fixed_usd": 0.50,
+        "display": "5.0% + $0.50 (MoR all-in)"
+      },
+      "in_person_card": null,
+      "ach": null,
+      "international_card_surcharge_percent": 0.0,
+      "currency_conversion_surcharge_percent": 0.0,
+      "notes": "All-in Merchant of Record fee includes global sales tax/VAT calculation, collection, remittance, and subscription billing.",
+      "source_url": "https://www.paddle.com/pricing",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "provider_id": "lemon-squeezy",
+      "plan_name": "Standard Merchant of Record",
+      "pricing_model": "flat_rate",
+      "is_estimated": false,
+      "monthly_fee_usd": 0.0,
+      "online_card": {
+        "percent": 0.05,
+        "fixed_usd": 0.50,
+        "display": "5.0% + $0.50 (MoR all-in)"
+      },
+      "in_person_card": null,
+      "ach": null,
+      "international_card_surcharge_percent": 0.015,
+      "currency_conversion_surcharge_percent": 0.0,
+      "notes": "Merchant of Record fee includes global tax/VAT compliance. +1.5% applies to international cards and PayPal transactions.",
+      "source_url": "https://www.lemonsqueezy.com/pricing",
+      "verification_date": "2026-11-17"
+    }
+  ]
+}

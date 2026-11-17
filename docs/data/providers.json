@@ -1,0 +1,414 @@
+{
+  "schema_version": "1.0.0",
+  "last_verified": "2026-11-17",
+  "providers": [
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "category": "payment_processor",
+      "website": "https://stripe.com",
+      "pricing_url": "https://stripe.com/pricing",
+      "docs_url": "https://docs.stripe.com",
+      "merchant_countries": ["US", "CA", "GB", "EU", "AU", "JP", "SG", "45+ countries"],
+      "merchant_country_count": 46,
+      "customer_countries": {
+        "scope": "global",
+        "currencies_supported": 135,
+        "notes": "Accepts cards and local payment methods from customers in 195+ countries; merchant account availability is limited to ~46 supported countries."
+      },
+      "platforms": ["custom_website", "woocommerce", "mobile_app", "saas_billing", "pos_in_person"],
+      "payment_types": ["cards", "ach", "apple_pay", "google_pay"],
+      "billing_models": ["one_time", "subscriptions", "metered_billing", "invoicing"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["Node.js", "Python", "Ruby", "Go", "Java", "PHP", ".NET", "iOS", "Android"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "pci_compliant_export",
+        "effort": "medium",
+        "notes": "Supports PCI-compliant PAN/token data export upon request; Stripe Billing subscribers and webhooks require remapping to the target processor."
+      },
+      "high_risk_support": "no",
+      "summary": "Developer-first full-stack payment processor with broad APIs, subscriptions, and global card/wallet support.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "square",
+      "name": "Square",
+      "category": "payment_processor",
+      "website": "https://squareup.com",
+      "pricing_url": "https://squareup.com/us/en/payments/our-fees",
+      "docs_url": "https://developer.squareup.com",
+      "merchant_countries": ["US", "CA", "GB", "AU", "JP", "IE", "FR", "ES"],
+      "merchant_country_count": 8,
+      "customer_countries": {
+        "scope": "regional",
+        "currencies_supported": 8,
+        "notes": "Merchant accounts operate in 8 countries; settlements occur in the merchant's local currency."
+      },
+      "platforms": ["custom_website", "woocommerce", "mobile_app", "pos_in_person"],
+      "payment_types": ["cards", "ach", "apple_pay", "google_pay"],
+      "billing_models": ["one_time", "subscriptions", "invoicing"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["Node.js", "Python", "Ruby", "Java", "PHP", ".NET", "iOS", "Android"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "pci_compliant_export",
+        "effort": "medium",
+        "notes": "Strongest for omnichannel POS + online; migrating away requires replacing POS hardware integrations if used in-person."
+      },
+      "high_risk_support": "no",
+      "summary": "Omnichannel POS and online payment processor geared toward US retail, restaurants, and small service businesses.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "paypal",
+      "name": "PayPal",
+      "category": "payment_processor",
+      "website": "https://www.paypal.com/us/business",
+      "pricing_url": "https://www.paypal.com/us/business/accept-payments/checkout",
+      "docs_url": "https://developer.paypal.com",
+      "merchant_countries": ["US", "CA", "GB", "EU", "AU", "200+ markets"],
+      "merchant_country_count": 200,
+      "customer_countries": {
+        "scope": "global",
+        "currencies_supported": 25,
+        "notes": "PayPal Checkout and card processing available across 200+ markets in 25 currencies."
+      },
+      "platforms": ["custom_website", "shopify", "woocommerce", "mobile_app", "saas_billing"],
+      "payment_types": ["cards", "apple_pay", "google_pay", "venmo", "paypal_wallet"],
+      "billing_models": ["one_time", "subscriptions", "invoicing"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["Node.js", "Python", "Java", "PHP", ".NET", "JS SDK"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "limited",
+        "effort": "medium",
+        "notes": "PayPal Wallet billing agreements cannot be exported to non-PayPal processors; card vault tokens require PCI-compliant transfer."
+      },
+      "high_risk_support": "no",
+      "summary": "Widely recognized checkout brand offering PayPal Wallet, Venmo, Pay Later, and Expanded card processing.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "braintree",
+      "name": "Braintree",
+      "category": "payment_processor",
+      "website": "https://www.braintreepayments.com",
+      "pricing_url": "https://www.braintreepayments.com/braintree-pricing",
+      "docs_url": "https://developer.paypal.com/braintree/docs",
+      "merchant_countries": ["US", "CA", "GB", "EU", "AU", "SG", "HK", "45+ countries"],
+      "merchant_country_count": 45,
+      "customer_countries": {
+        "scope": "global",
+        "currencies_supported": 130,
+        "notes": "Supports 130+ currencies for card and wallet payments; PayPal-owned gateway and merchant account."
+      },
+      "platforms": ["custom_website", "woocommerce", "mobile_app", "saas_billing"],
+      "payment_types": ["cards", "ach", "apple_pay", "google_pay", "venmo", "paypal_wallet"],
+      "billing_models": ["one_time", "subscriptions", "invoicing"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["Node.js", "Python", "Ruby", "Java", "PHP", ".NET", "iOS", "Android"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "pci_compliant_export",
+        "effort": "medium",
+        "notes": "Supports PCI-compliant card vault export; PayPal/Venmo billing agreements remain tied to the PayPal ecosystem."
+      },
+      "high_risk_support": "no",
+      "summary": "PayPal-owned developer gateway combining cards, ACH, Apple Pay, Google Pay, PayPal, and Venmo in one integration.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "helcim",
+      "name": "Helcim",
+      "category": "payment_processor",
+      "website": "https://www.helcim.com",
+      "pricing_url": "https://www.helcim.com/pricing/",
+      "docs_url": "https://devdocs.helcim.com",
+      "merchant_countries": ["US", "CA"],
+      "merchant_country_count": 2,
+      "customer_countries": {
+        "scope": "global",
+        "currencies_supported": 2,
+        "notes": "Accepts international Visa, Mastercard, Amex, and Discover cards; merchants must be US or Canadian businesses."
+      },
+      "platforms": ["custom_website", "woocommerce", "pos_in_person"],
+      "payment_types": ["cards", "ach", "apple_pay", "google_pay"],
+      "billing_models": ["one_time", "subscriptions", "invoicing"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["REST API", "HelcimPay.js"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "pci_compliant_export",
+        "effort": "medium",
+        "notes": "Interchange-plus pricing with automatic volume discounts; no monthly fee and no cancellation fee."
+      },
+      "high_risk_support": "no",
+      "summary": "Transparent interchange-plus processor for US and Canadian SMBs with no monthly fee and automatic volume tiers.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "authorize-net",
+      "name": "Authorize.net",
+      "category": "gateway",
+      "website": "https://www.authorize.net",
+      "pricing_url": "https://www.authorize.net/sign-up/pricing.html",
+      "docs_url": "https://developer.authorize.net",
+      "merchant_countries": ["US", "CA", "GB", "EU", "AU"],
+      "merchant_country_count": 30,
+      "customer_countries": {
+        "scope": "global",
+        "currencies_supported": 15,
+        "notes": "Visa-owned payment gateway supporting global card acceptance via compatible merchant accounts."
+      },
+      "platforms": ["custom_website", "shopify", "woocommerce", "saas_billing"],
+      "payment_types": ["cards", "ach", "apple_pay"],
+      "billing_models": ["one_time", "subscriptions", "invoicing"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["Node.js", "Python", "Ruby", "Java", "PHP", ".NET"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "pci_compliant_export",
+        "effort": "low",
+        "notes": "Gateway-only mode lets you switch underlying merchant acquirers without changing your checkout integration."
+      },
+      "high_risk_support": "case_by_case",
+      "summary": "Established Visa-owned gateway offering both an all-in-one merchant plan and gateway-only bring-your-own-acquirer flexibility.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "stax",
+      "name": "Stax",
+      "category": "payment_processor",
+      "website": "https://staxpayments.com",
+      "pricing_url": "https://staxpayments.com/pricing/",
+      "docs_url": "https://docs.staxpayments.com",
+      "merchant_countries": ["US"],
+      "merchant_country_count": 1,
+      "customer_countries": {
+        "scope": "global",
+        "currencies_supported": 1,
+        "notes": "Accepts international cards from global buyers; merchant must be a US-registered business settling in USD."
+      },
+      "platforms": ["custom_website", "woocommerce", "pos_in_person"],
+      "payment_types": ["cards", "ach", "apple_pay", "google_pay"],
+      "billing_models": ["one_time", "subscriptions", "invoicing"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["REST API", "Stax.js"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "pci_compliant_export",
+        "effort": "medium",
+        "notes": "Subscription-based 0% interchange markup model; typically saves money only once monthly card volume exceeds ~$8,000-$10,000."
+      },
+      "high_risk_support": "no",
+      "summary": "Membership-style processor charging a flat monthly subscription plus 0% markup over direct interchange.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "shopify-payments",
+      "name": "Shopify Payments",
+      "category": "payment_processor",
+      "website": "https://www.shopify.com/payments",
+      "pricing_url": "https://www.shopify.com/pricing",
+      "docs_url": "https://shopify.dev/docs/apps/build/payments",
+      "merchant_countries": ["US", "CA", "GB", "AU", "EU", "JP", "SG", "23 countries"],
+      "merchant_country_count": 23,
+      "customer_countries": {
+        "scope": "global",
+        "currencies_supported": 130,
+        "notes": "Built into Shopify checkout (powered by Stripe infrastructure); supports Shop Pay and multi-currency payouts."
+      },
+      "platforms": ["shopify", "pos_in_person"],
+      "payment_types": ["cards", "apple_pay", "google_pay"],
+      "billing_models": ["one_time", "subscriptions"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": false,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["Shopify Storefront / Checkout Extensions"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "limited",
+        "effort": "high",
+        "notes": "Tightly coupled to Shopify; using a third-party gateway on Shopify incurs an extra 0.6%-2.0% Shopify transaction surcharge."
+      },
+      "high_risk_support": "no",
+      "summary": "Native payment processor for Shopify stores with Shop Pay acceleration and zero third-party gateway surcharge.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "adyen",
+      "name": "Adyen",
+      "category": "payment_processor",
+      "website": "https://www.adyen.com",
+      "pricing_url": "https://www.adyen.com/pricing",
+      "docs_url": "https://docs.adyen.com",
+      "merchant_countries": ["US", "CA", "GB", "EU", "AU", "SG", "BR", "MX", "40+ countries"],
+      "merchant_country_count": 40,
+      "customer_countries": {
+        "scope": "global",
+        "currencies_supported": 150,
+        "notes": "Enterprise global acquiring platform supporting 150+ currencies and local payment methods worldwide."
+      },
+      "platforms": ["custom_website", "shopify", "woocommerce", "mobile_app", "saas_billing", "pos_in_person"],
+      "payment_types": ["cards", "ach", "apple_pay", "google_pay"],
+      "billing_models": ["one_time", "subscriptions", "metered_billing"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["Node.js", "Python", "Ruby", "Go", "Java", "PHP", ".NET", "iOS", "Android"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "pci_compliant_export",
+        "effort": "high",
+        "notes": "Designed for mid-market and enterprise volume; onboarding requires underwriting and minimum monthly invoice commitments."
+      },
+      "high_risk_support": "case_by_case",
+      "summary": "Enterprise omnichannel processor using Interchange++ pricing and direct local acquiring.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "gocardless",
+      "name": "GoCardless",
+      "category": "bank_debit",
+      "website": "https://gocardless.com",
+      "pricing_url": "https://gocardless.com/en-us/pricing/",
+      "docs_url": "https://developer.gocardless.com",
+      "merchant_countries": ["US", "CA", "GB", "EU", "AU", "NZ"],
+      "merchant_country_count": 30,
+      "customer_countries": {
+        "scope": "regional",
+        "currencies_supported": 8,
+        "notes": "Specializes in bank-to-bank direct debit (ACH in US, SEPA in EU, Bacs in UK, PAD in CA); does not process credit/debit cards."
+      },
+      "platforms": ["custom_website", "woocommerce", "saas_billing"],
+      "payment_types": ["ach"],
+      "billing_models": ["one_time", "subscriptions", "invoicing"],
+      "tax_responsibility": "merchant",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["Node.js", "Python", "Ruby", "Java", "PHP", ".NET"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "limited",
+        "effort": "medium",
+        "notes": "Bank debit mandates (ACH authorizations) are tied to the processor/ODFI relationship."
+      },
+      "high_risk_support": "no",
+      "summary": "Bank-to-bank ACH and international direct debit specialist for recurring B2B and subscription invoices (no cards).",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "paddle",
+      "name": "Paddle",
+      "category": "merchant_of_record",
+      "website": "https://www.paddle.com",
+      "pricing_url": "https://www.paddle.com/pricing",
+      "docs_url": "https://developer.paddle.com",
+      "merchant_countries": ["US", "CA", "GB", "EU", "AU", "Global (200+ territories)"],
+      "merchant_country_count": 200,
+      "customer_countries": {
+        "scope": "global",
+        "currencies_supported": 25,
+        "notes": "Acts as Merchant of Record across 200+ territories, calculating, collecting, and remitting global sales tax and VAT."
+      },
+      "platforms": ["custom_website", "mobile_app", "saas_billing"],
+      "payment_types": ["cards", "apple_pay", "google_pay", "paypal_wallet"],
+      "billing_models": ["one_time", "subscriptions", "metered_billing", "invoicing"],
+      "tax_responsibility": "merchant_of_record",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["Node.js", "Python", "Go", "PHP", "Paddle.js"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "limited",
+        "effort": "high",
+        "notes": "As Merchant of Record, Paddle owns the buyer billing relationship; migrating subscribers out requires re-collecting payment consent or working with Paddle support."
+      },
+      "high_risk_support": "no",
+      "summary": "Merchant of Record for B2B/B2C SaaS that handles global sales tax/VAT, subscriptions, and chargebacks in one 5% + $0.50 fee.",
+      "verification_date": "2026-11-17"
+    },
+    {
+      "id": "lemon-squeezy",
+      "name": "Lemon Squeezy",
+      "category": "merchant_of_record",
+      "website": "https://www.lemonsqueezy.com",
+      "pricing_url": "https://www.lemonsqueezy.com/pricing",
+      "docs_url": "https://docs.lemonsqueezy.com",
+      "merchant_countries": ["US", "CA", "GB", "EU", "AU", "Global (135+ payout countries)"],
+      "merchant_country_count": 135,
+      "customer_countries": {
+        "scope": "global",
+        "currencies_supported": 25,
+        "notes": "Merchant of Record (acquired by Stripe) handling global sales tax/VAT for SaaS, digital downloads, and AI apps."
+      },
+      "platforms": ["custom_website", "saas_billing"],
+      "payment_types": ["cards", "apple_pay", "google_pay", "paypal_wallet"],
+      "billing_models": ["one_time", "subscriptions", "metered_billing"],
+      "tax_responsibility": "merchant_of_record",
+      "api_features": {
+        "rest_api": true,
+        "webhooks": true,
+        "sandbox": true,
+        "sdks": ["JavaScript/TypeScript", "Lemon.js", "REST API"],
+        "hosted_checkout": true
+      },
+      "migration": {
+        "token_portability": "limited",
+        "effort": "high",
+        "notes": "Merchant of Record model means subscribers are billed under Lemon Squeezy's merchant entity."
+      },
+      "high_risk_support": "no",
+      "summary": "Developer-friendly Merchant of Record for SaaS, digital products, and license keys with built-in global tax compliance.",
+      "verification_date": "2026-11-17"
+    }
+  ]
+}
