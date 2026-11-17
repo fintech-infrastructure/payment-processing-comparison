@@ -6,7 +6,7 @@
 
   function applyCount(count) {
     if (!Number.isFinite(count) || count <= 0) return;
-    document.querySelectorAll("[data-gh-stars]").forEach((el) => {
+    document.querySelectorAll("[data-gh-stars-text]").forEach((el) => {
       el.textContent = `Star on GitHub (${count.toLocaleString("en-US")})`;
     });
   }

@@ -71,6 +71,7 @@ nav.top-nav a:active {
 .gh-star-btn {
   display: inline-flex;
   align-items: center;
+  gap: var(--space-xs);
   padding: var(--space-2xs) var(--space-sm);
   border-radius: var(--radius-stock);
   background: var(--color-cotton);

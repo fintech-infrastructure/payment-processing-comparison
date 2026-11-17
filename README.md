@@ -7,6 +7,8 @@ Open-source dataset, compatibility-first comparison engine, and fee calculator f
 - **Interactive Calculator & Guides:** [fintech-infrastructure.github.io/payment-processing-comparison](https://fintech-infrastructure.github.io/payment-processing-comparison/)
 - **Last Verified:** `2026-11-17` (all rates sourced from official provider pricing pages in [`data/pricing.json`](data/pricing.json))
 
+![Payment Processor Comparison Calculator](docs/assets/calculator-preview.png)
+
 ---
 
 ## Why This Exists
