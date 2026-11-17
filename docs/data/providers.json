@@ -101,7 +101,7 @@
         "notes": "PayPal Wallet billing agreements cannot be exported to non-PayPal processors; card vault tokens require PCI-compliant transfer."
       },
       "high_risk_support": "no",
-      "summary": "Widely recognized checkout brand offering PayPal Wallet, Venmo, Pay Later, and Expanded card processing.",
+      "summary": "Checkout processor supporting PayPal Wallet, Venmo, Pay Later, and Expanded card payments.",
       "verification_date": "2026-11-17"
     },
     {
@@ -169,7 +169,7 @@
         "notes": "Interchange-plus pricing with automatic volume discounts; no monthly fee and no cancellation fee."
       },
       "high_risk_support": "no",
-      "summary": "Transparent interchange-plus processor for US and Canadian SMBs with no monthly fee and automatic volume tiers.",
+      "summary": "Interchange-plus processor for US and Canadian SMBs with $0 monthly fee and automatic volume tiers.",
       "verification_date": "2026-11-17"
     },
     {
@@ -203,7 +203,7 @@
         "notes": "Gateway-only mode lets you switch underlying merchant acquirers without changing your checkout integration."
       },
       "high_risk_support": "case_by_case",
-      "summary": "Established Visa-owned gateway offering both an all-in-one merchant plan and gateway-only bring-your-own-acquirer flexibility.",
+      "summary": "Visa-owned gateway offering an all-in-one merchant plan ($25/mo) or gateway-only acquirer routing.",
       "verification_date": "2026-11-17"
     },
     {
@@ -407,7 +407,7 @@
         "notes": "Merchant of Record model means subscribers are billed under Lemon Squeezy's merchant entity."
       },
       "high_risk_support": "no",
-      "summary": "Developer-friendly Merchant of Record for SaaS, digital products, and license keys with built-in global tax compliance.",
+      "summary": "Merchant of Record (Stripe-owned) for SaaS, digital products, and license keys with global tax remittance.",
       "verification_date": "2026-11-17"
     },
     {
@@ -762,7 +762,7 @@
       "customer_countries": {
         "scope": "global",
         "currencies_supported": 25,
-        "notes": "Full-service B2B/B2C software and SaaS Merchant of Record handling global VAT/sales tax and localized checkouts."
+        "notes": "B2B/B2C software and SaaS Merchant of Record handling global VAT/sales tax and localized checkouts."
       },
       "platforms": ["custom_website", "saas_billing"],
       "payment_types": ["cards", "ach", "paypal_wallet", "apple_pay"],
@@ -781,7 +781,7 @@
         "notes": "Custom volume pricing; strong alternative to Paddle for established B2B SaaS and desktop software."
       },
       "high_risk_support": "no",
-      "summary": "Established B2B/B2C software Merchant of Record with custom volume pricing and global tax compliance.",
+      "summary": "B2B/B2C software Merchant of Record with custom volume pricing and global tax remittance.",
       "verification_date": "2026-11-17"
     },
     {

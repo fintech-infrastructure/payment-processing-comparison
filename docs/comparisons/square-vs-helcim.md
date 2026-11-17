@@ -11,4 +11,4 @@
 | **Tax responsibility** | Merchant handles tax | Merchant handles tax |
 
 - **Square:** Omnichannel POS and online payment processor geared toward US retail, restaurants, and small service businesses. ([Official pricing](https://squareup.com/us/en/payments/our-fees))
-- **Helcim:** Transparent interchange-plus processor for US and Canadian SMBs with no monthly fee and automatic volume tiers. ([Official pricing](https://www.helcim.com/pricing/))
+- **Helcim:** Interchange-plus processor for US and Canadian SMBs with $0 monthly fee and automatic volume tiers. ([Official pricing](https://www.helcim.com/pricing/))

@@ -11,4 +11,4 @@
 | **Tax responsibility** | Merchant handles tax | Merchant handles tax |
 
 - **Stripe:** Developer-first full-stack payment processor with broad APIs, subscriptions, and global card/wallet support. ([Official pricing](https://stripe.com/pricing))
-- **Helcim:** Transparent interchange-plus processor for US and Canadian SMBs with no monthly fee and automatic volume tiers. ([Official pricing](https://www.helcim.com/pricing/))
+- **Helcim:** Interchange-plus processor for US and Canadian SMBs with $0 monthly fee and automatic volume tiers. ([Official pricing](https://www.helcim.com/pricing/))

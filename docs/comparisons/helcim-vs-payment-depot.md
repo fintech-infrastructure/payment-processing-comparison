@@ -10,5 +10,5 @@
 | **Merchant countries** | 2 | 1 |
 | **Tax responsibility** | Merchant handles tax | Merchant handles tax |
 
-- **Helcim:** Transparent interchange-plus processor for US and Canadian SMBs with no monthly fee and automatic volume tiers. ([Official pricing](https://www.helcim.com/pricing/))
+- **Helcim:** Interchange-plus processor for US and Canadian SMBs with $0 monthly fee and automatic volume tiers. ([Official pricing](https://www.helcim.com/pricing/))
 - **Payment Depot:** Membership interchange-plus processor charging 0% percentage markup over direct interchange. ([Official pricing](https://paymentdepot.com/pricing/))

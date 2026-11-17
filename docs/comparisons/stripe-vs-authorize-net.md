@@ -11,4 +11,4 @@
 | **Tax responsibility** | Merchant handles tax | Merchant handles tax |
 
 - **Stripe:** Developer-first full-stack payment processor with broad APIs, subscriptions, and global card/wallet support. ([Official pricing](https://stripe.com/pricing))
-- **Authorize.net:** Established Visa-owned gateway offering both an all-in-one merchant plan and gateway-only bring-your-own-acquirer flexibility. ([Official pricing](https://www.authorize.net/sign-up/pricing.html))
+- **Authorize.net:** Visa-owned gateway offering an all-in-one merchant plan ($25/mo) or gateway-only acquirer routing. ([Official pricing](https://www.authorize.net/sign-up/pricing.html))

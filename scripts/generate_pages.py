@@ -129,6 +129,7 @@ def _html_shell(title: str, description: str, canonical: str, h1: str, lead: str
         <a href="stripe-alternatives.html">Stripe Alternatives</a>
         <a href="cheapest-payment-processors.html">Cheapest Processors</a>
         <a href="payment-gateway-api-comparison.html">API Comparison</a>
+        <a class="gh-star-btn" data-gh-stars href="https://github.com/fintech-infrastructure/payment-processing-comparison" target="_blank" rel="noopener">Star on GitHub</a>
       </nav>
     </div>
   </header>
@@ -140,6 +141,7 @@ def _html_shell(title: str, description: str, canonical: str, h1: str, lead: str
     {body_html}
   </main>
   <footer class="site-footer"><div class="container">Verified {VERIFIED_DATE}. <a href="./">Back to Calculator</a></div></footer>
+  <script src="assets/star-count.js"></script>
 </body>
 </html>
 """
@@ -512,6 +514,13 @@ def main() -> None:
     all_pages = cat_pages + alt_pages + vs_pages
     update_sitemap_and_llms(all_pages)
     update_index_guides(vs_pages, alt_pages, cat_pages, providers_data["providers"])
+    import json as _json
+    embedded_js = (
+        "window.PPC_DATA = "
+        + _json.dumps({"providers": providers_data, "pricing": pricing_data}, separators=(",", ":"))
+        + ";\n"
+    )
+    (ROOT_DIR / "docs" / "data" / "embedded-data.js").write_text(embedded_js, encoding="utf-8")
     print(f"Generated {len(all_pages)} HTML subpages (+1 index.html = {len(all_pages)+1} total HTML pages).")
 
 

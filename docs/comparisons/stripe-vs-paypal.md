@@ -11,4 +11,4 @@
 | **Tax responsibility** | Merchant handles tax | Merchant handles tax |
 
 - **Stripe:** Developer-first full-stack payment processor with broad APIs, subscriptions, and global card/wallet support. ([Official pricing](https://stripe.com/pricing))
-- **PayPal:** Widely recognized checkout brand offering PayPal Wallet, Venmo, Pay Later, and Expanded card processing. ([Official pricing](https://www.paypal.com/us/business/accept-payments/checkout))
+- **PayPal:** Checkout processor supporting PayPal Wallet, Venmo, Pay Later, and Expanded card payments. ([Official pricing](https://www.paypal.com/us/business/accept-payments/checkout))

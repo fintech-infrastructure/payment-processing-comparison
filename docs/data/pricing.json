@@ -308,16 +308,16 @@
       "plan_name": "MX Merchant Interchange-Plus",
       "pricing_model": "interchange_plus",
       "is_estimated": true,
-      "monthly_fee_usd": 25.0,
+      "monthly_fee_usd": 20.0,
       "online_card": {
-        "markup_percent": 0.0025,
-        "markup_fixed_usd": 0.15,
-        "display": "Interchange + 0.25% + $0.15 (+ $25/mo)"
+        "markup_percent": 0.0020,
+        "markup_fixed_usd": 0.11,
+        "display": "Interchange + 0.20% + $0.11 (+ $20/mo)"
       },
       "in_person_card": {
         "markup_percent": 0.0015,
         "markup_fixed_usd": 0.08,
-        "display": "Interchange + 0.15% + $0.08 (+ $25/mo)"
+        "display": "Interchange + 0.15% + $0.08 (+ $20/mo)"
       },
       "ach": {
         "percent": 0.005,
@@ -416,17 +416,17 @@
       "online_card": {
         "percent": 0.029,
         "fixed_usd": 0.15,
-        "display": "2.9% + $0.15"
+        "display": "2.9% + $0.15 (invoices)"
       },
       "in_person_card": {
         "percent": 0.026,
-        "fixed_usd": 0.0,
-        "display": "2.6% (in-person)"
+        "fixed_usd": 0.10,
+        "display": "2.6% + $0.10 (in-person)"
       },
       "ach": null,
       "international_card_surcharge_percent": 0.0,
       "currency_conversion_surcharge_percent": 0.0,
-      "notes": "Lower fixed per-transaction fee ($0.15 online, $0 in-person) than Square Free; no monthly fee.",
+      "notes": "2.9% + $0.15 applies to SumUp invoices/payment links (online store checkout is 3.5% + $0.15); 2.6% + $0.10 in-person; $0 monthly fee.",
       "source_url": "https://www.sumup.com/en-us/pricing/",
       "verification_date": "2026-11-17"
     },
@@ -465,14 +465,14 @@
         "display": "3.09% + $0.15 (starter)"
       },
       "in_person_card": {
-        "percent": 0.0249,
+        "percent": 0.0309,
         "fixed_usd": 0.15,
-        "display": "2.49% + $0.15 (in-person)"
+        "display": "3.09% + $0.15 (starter in-person)"
       },
       "ach": null,
       "international_card_surcharge_percent": 0.0,
       "currency_conversion_surcharge_percent": 0.0,
-      "notes": "Starter hardware-financed plan has higher card rates; paid software tiers lower card fees.",
+      "notes": "Pay-as-you-go Starter Kit is $0/mo at 3.09% + $0.15; paid Point of Sale plan ($69/mo) lowers in-person card rate to 2.49% + $0.15.",
       "source_url": "https://pos.toasttab.com/pricing",
       "verification_date": "2026-11-17"
     },

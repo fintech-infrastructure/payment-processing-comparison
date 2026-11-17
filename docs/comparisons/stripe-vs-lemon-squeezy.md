@@ -11,4 +11,4 @@
 | **Tax responsibility** | Merchant handles tax | Merchant of Record |
 
 - **Stripe:** Developer-first full-stack payment processor with broad APIs, subscriptions, and global card/wallet support. ([Official pricing](https://stripe.com/pricing))
-- **Lemon Squeezy:** Developer-friendly Merchant of Record for SaaS, digital products, and license keys with built-in global tax compliance. ([Official pricing](https://www.lemonsqueezy.com/pricing))
+- **Lemon Squeezy:** Merchant of Record (Stripe-owned) for SaaS, digital products, and license keys with global tax remittance. ([Official pricing](https://www.lemonsqueezy.com/pricing))

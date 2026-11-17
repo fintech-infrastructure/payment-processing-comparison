@@ -11,4 +11,4 @@
 | **Tax responsibility** | Merchant of Record | Merchant of Record |
 
 - **Paddle:** Merchant of Record for B2B/B2C SaaS that handles global sales tax/VAT, subscriptions, and chargebacks in one 5% + $0.50 fee. ([Official pricing](https://www.paddle.com/pricing))
-- **Lemon Squeezy:** Developer-friendly Merchant of Record for SaaS, digital products, and license keys with built-in global tax compliance. ([Official pricing](https://www.lemonsqueezy.com/pricing))
+- **Lemon Squeezy:** Merchant of Record (Stripe-owned) for SaaS, digital products, and license keys with global tax remittance. ([Official pricing](https://www.lemonsqueezy.com/pricing))

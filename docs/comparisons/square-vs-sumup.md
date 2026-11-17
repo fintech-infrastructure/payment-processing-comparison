@@ -3,7 +3,7 @@
 | Criteria | Square | SumUp |
 | --- | --- | --- |
 | **Pricing model** | flat_rate | flat_rate |
-| **Published rate** | 3.3% + $0.30 | 2.9% + $0.15 |
+| **Published rate** | 3.3% + $0.30 | 2.9% + $0.15 (invoices) |
 | **$20k/mo ($50 avg ticket)** | $780.00/mo (3.90%) | $640.00/mo (3.20%) |
 | **$100k/mo ($100 avg ticket)** | $3,600.00/mo (3.60%) | $3,050.00/mo (3.05%) |
 | **ACH bank debit** | 1.0% ($1.00 min) | Not available |

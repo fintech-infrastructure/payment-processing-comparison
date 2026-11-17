@@ -110,10 +110,17 @@
   }
 
   async function init() {
-    const [providersData, pricingData] = await Promise.all([
-      fetch("data/providers.json").then((r) => r.json()),
-      fetch("data/pricing.json").then((r) => r.json()),
-    ]);
+    let providersData;
+    let pricingData;
+    if (window.PPC_DATA) {
+      providersData = window.PPC_DATA.providers;
+      pricingData = window.PPC_DATA.pricing;
+    } else {
+      [providersData, pricingData] = await Promise.all([
+        fetch("data/providers.json").then((r) => r.json()),
+        fetch("data/pricing.json").then((r) => r.json()),
+      ]);
+    }
 
     const pricingById = Object.fromEntries(pricingData.pricing.map((p) => [p.provider_id, p]));
     const benchmark = pricingData.interchange_benchmark;

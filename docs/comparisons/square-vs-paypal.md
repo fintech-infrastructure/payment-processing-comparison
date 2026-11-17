@@ -11,4 +11,4 @@
 | **Tax responsibility** | Merchant handles tax | Merchant handles tax |
 
 - **Square:** Omnichannel POS and online payment processor geared toward US retail, restaurants, and small service businesses. ([Official pricing](https://squareup.com/us/en/payments/our-fees))
-- **PayPal:** Widely recognized checkout brand offering PayPal Wallet, Venmo, Pay Later, and Expanded card processing. ([Official pricing](https://www.paypal.com/us/business/accept-payments/checkout))
+- **PayPal:** Checkout processor supporting PayPal Wallet, Venmo, Pay Later, and Expanded card payments. ([Official pricing](https://www.paypal.com/us/business/accept-payments/checkout))
