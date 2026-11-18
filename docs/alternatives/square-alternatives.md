@@ -1,4 +1,4 @@
-# Best Square Alternatives (2026)
+# Best Square alternatives (2026)
 
 Compare lower online card rates, POS systems, and zero-fee micro-merchant tools.
 

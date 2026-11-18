@@ -1,4 +1,4 @@
-# Best Shopify Payments Alternatives (2026)
+# Best Shopify Payments alternatives (2026)
 
 Compare third-party gateways for Shopify stores and cross-border checkout.
 

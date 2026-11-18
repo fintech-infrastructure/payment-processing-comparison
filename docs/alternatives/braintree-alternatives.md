@@ -1,6 +1,6 @@
-# Best Braintree Alternatives (2026)
+# Best Braintree alternatives (2026)
 
-Compare developer-first gateways, interchange-plus pricing, and wallet support.
+Compare developer gateways, interchange-plus pricing, and wallet support.
 
 | Provider | Published Rate | $20k/mo Est. | Best Fit | Migration Effort |
 | --- | --- | --- | --- | --- |

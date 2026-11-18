@@ -3,19 +3,19 @@
 Open-source comparison of 24 payment processors for US businesses: real transaction fees, compatibility-first filtering, switching savings, and API support.
 
 - Interactive Calculator: https://fintech-infrastructure.github.io/payment-processing-comparison/
-- Payment Gateway API Comparison: https://fintech-infrastructure.github.io/payment-processing-comparison/payment-gateway-api-comparison.html
-- ACH Payment Processors: https://fintech-infrastructure.github.io/payment-processing-comparison/ach-payment-processors.html
-- Cheapest Payment Processors: https://fintech-infrastructure.github.io/payment-processing-comparison/cheapest-payment-processors.html
-- Merchant of Record Comparison: https://fintech-infrastructure.github.io/payment-processing-comparison/merchant-of-record-comparison.html
-- Best Stripe Alternatives: https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-alternatives.html
-- Best Square Alternatives: https://fintech-infrastructure.github.io/payment-processing-comparison/square-alternatives.html
-- Best PayPal Alternatives: https://fintech-infrastructure.github.io/payment-processing-comparison/paypal-alternatives.html
-- Best Shopify Payments Alternatives: https://fintech-infrastructure.github.io/payment-processing-comparison/shopify-payments-alternatives.html
-- Best Braintree Alternatives: https://fintech-infrastructure.github.io/payment-processing-comparison/braintree-alternatives.html
-- Best Authorize.net Alternatives: https://fintech-infrastructure.github.io/payment-processing-comparison/authorize-net-alternatives.html
-- Best Paddle Alternatives (MoR): https://fintech-infrastructure.github.io/payment-processing-comparison/paddle-alternatives.html
-- Best Clover Alternatives: https://fintech-infrastructure.github.io/payment-processing-comparison/clover-alternatives.html
-- High-Risk Payment Processors: https://fintech-infrastructure.github.io/payment-processing-comparison/high-risk-payment-processors.html
+- Payment gateway API comparison: https://fintech-infrastructure.github.io/payment-processing-comparison/payment-gateway-api-comparison.html
+- ACH payment processors: https://fintech-infrastructure.github.io/payment-processing-comparison/ach-payment-processors.html
+- Cheapest US payment processors: https://fintech-infrastructure.github.io/payment-processing-comparison/cheapest-payment-processors.html
+- Merchant of Record comparison: https://fintech-infrastructure.github.io/payment-processing-comparison/merchant-of-record-comparison.html
+- Best Stripe alternatives: https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-alternatives.html
+- Best Square alternatives: https://fintech-infrastructure.github.io/payment-processing-comparison/square-alternatives.html
+- Best PayPal alternatives: https://fintech-infrastructure.github.io/payment-processing-comparison/paypal-alternatives.html
+- Best Shopify Payments alternatives: https://fintech-infrastructure.github.io/payment-processing-comparison/shopify-payments-alternatives.html
+- Best Braintree alternatives: https://fintech-infrastructure.github.io/payment-processing-comparison/braintree-alternatives.html
+- Best Authorize.net alternatives: https://fintech-infrastructure.github.io/payment-processing-comparison/authorize-net-alternatives.html
+- Best Paddle alternatives (MoR): https://fintech-infrastructure.github.io/payment-processing-comparison/paddle-alternatives.html
+- Best Clover alternatives: https://fintech-infrastructure.github.io/payment-processing-comparison/clover-alternatives.html
+- High-risk payment processors: https://fintech-infrastructure.github.io/payment-processing-comparison/high-risk-payment-processors.html
 - Stripe vs Square: https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-vs-square.html
 - Stripe vs PayPal: https://fintech-infrastructure.github.io/payment-processing-comparison/stripe-vs-paypal.html
 - Square vs PayPal: https://fintech-infrastructure.github.io/payment-processing-comparison/square-vs-paypal.html

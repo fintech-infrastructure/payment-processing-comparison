@@ -43,56 +43,56 @@ VS_PAIRS: list[tuple[str, str, str]] = [
 ALTERNATIVES_PAGES: list[tuple[str, str, str, list[str]]] = [
     (
         "stripe-alternatives",
-        "Best Stripe Alternatives",
+        "Best Stripe alternatives",
         "Compare interchange-plus rates, Merchant of Record tax handling, and B2B ACH.",
         ["helcim", "dharma-merchant-services", "stax", "braintree", "paddle", "lemon-squeezy", "gocardless", "adyen"],
     ),
     (
         "square-alternatives",
-        "Best Square Alternatives",
+        "Best Square alternatives",
         "Compare lower online card rates, POS systems, and zero-fee micro-merchant tools.",
         ["stripe", "helcim", "sumup", "clover", "toast", "chase-payment-solutions", "paypal"],
     ),
     (
         "paypal-alternatives",
-        "Best PayPal Alternatives",
+        "Best PayPal alternatives",
         "Compare developer APIs, native ACH support, and lower card processing fees.",
         ["stripe", "braintree", "helcim", "chase-payment-solutions", "authorize-net", "2checkout"],
     ),
     (
         "shopify-payments-alternatives",
-        "Best Shopify Payments Alternatives",
+        "Best Shopify Payments alternatives",
         "Compare third-party gateways for Shopify stores and cross-border checkout.",
         ["stripe", "paypal", "authorize-net", "adyen", "2checkout"],
     ),
     (
         "braintree-alternatives",
-        "Best Braintree Alternatives",
-        "Compare developer-first gateways, interchange-plus pricing, and wallet support.",
+        "Best Braintree alternatives",
+        "Compare developer gateways, interchange-plus pricing, and wallet support.",
         ["stripe", "adyen", "helcim", "authorize-net", "nmi", "paypal"],
     ),
     (
         "authorize-net-alternatives",
-        "Best Authorize.net Alternatives",
-        "Compare modern payment APIs, gateway-only options, and no-monthly-fee processors.",
+        "Best Authorize.net alternatives",
+        "Compare payment APIs, gateway-only options, and zero-monthly-fee processors.",
         ["nmi", "stripe", "helcim", "dharma-merchant-services", "payline-data", "braintree"],
     ),
     (
         "paddle-alternatives",
-        "Best Paddle Alternatives (MoR)",
+        "Best Paddle alternatives (MoR)",
         "Compare SaaS Merchant of Record platforms and global tax-handling options.",
         ["lemon-squeezy", "2checkout", "fastspring", "stripe"],
     ),
     (
         "clover-alternatives",
-        "Best Clover Alternatives",
-        "Compare transparent POS and online card processors without long reseller contracts.",
+        "Best Clover alternatives",
+        "Compare POS and online card processors without long reseller contracts.",
         ["square", "toast", "helcim", "sumup", "stripe", "chase-payment-solutions"],
     ),
     (
         "high-risk-payment-processors",
-        "High-Risk Payment Processors",
-        "Compare gateways and underwritten accounts for industries declined by aggregators.",
+        "High-risk payment processors",
+        "Compare gateways and underwritten accounts for verticals declined by aggregators.",
         ["durango-merchant-services", "nmi", "payline-data", "authorize-net", "adyen"],
     ),
 ]
@@ -338,13 +338,13 @@ def generate_category_pages(providers_data: dict, pricing_by_id: dict) -> list[t
             "Payment Gateway API Comparison (2026): SDKs, Webhooks & Billing",
             "Compare REST APIs, webhooks, sandboxes, and SDKs across 20+ payment providers.",
             f"{BASE_URL}/payment-gateway-api-comparison.html",
-            "Payment Gateway API Comparison",
+            "Payment gateway API comparison",
             "Compare REST APIs, webhooks, test sandboxes, SDKs, and billing models.",
             api_body,
         ),
         encoding="utf-8",
     )
-    generated.append(("payment-gateway-api-comparison.html", "Payment Gateway API Comparison", "SDKs, webhooks, sandboxes, and metered billing."))
+    generated.append(("payment-gateway-api-comparison.html", "Payment gateway API comparison", "SDKs, webhooks, sandboxes, and metered billing."))
 
     # 2. ACH Payment Processors
     ach_report = compare_processors(CalculatorInput(monthly_volume_usd=50000, avg_ticket_usd=500, payment_type="ach"))
@@ -365,13 +365,13 @@ def generate_category_pages(providers_data: dict, pricing_by_id: dict) -> list[t
             "ACH Payment Processors & Bank Debit Comparison (2026)",
             "Compare US ACH fees across Stripe, GoCardless, Dwolla, Helcim, Braintree, and Dharma.",
             f"{BASE_URL}/ach-payment-processors.html",
-            "ACH Payment Processors Compared",
+            "ACH payment processors compared",
             "Compare US ACH and bank debit fees for B2B invoices and subscriptions.",
             ach_body,
         ),
         encoding="utf-8",
     )
-    generated.append(("ach-payment-processors.html", "ACH Payment Processors", "Bank-to-bank ACH fees vs card processing."))
+    generated.append(("ach-payment-processors.html", "ACH payment processors", "Bank-to-bank ACH fees vs card processing."))
 
     # 3. Cheapest Payment Processors
     cheap_report = compare_processors(CalculatorInput(monthly_volume_usd=20000, avg_ticket_usd=50, payment_type="cards"))
@@ -395,13 +395,13 @@ def generate_category_pages(providers_data: dict, pricing_by_id: dict) -> list[t
             "Cheapest Payment Processors for US Businesses (2026)",
             "Ranked comparison of US card processing fees at $20,000/mo across flat-rate and interchange-plus providers.",
             f"{BASE_URL}/cheapest-payment-processors.html",
-            "Cheapest Payment Processors (US)",
+            "Cheapest US payment processors",
             "Ranked by estimated monthly fees at $20,000/mo and $50 average ticket.",
             cheap_body,
         ),
         encoding="utf-8",
     )
-    generated.append(("cheapest-payment-processors.html", "Cheapest Payment Processors", "Ranked by real monthly cost at $20k/mo."))
+    generated.append(("cheapest-payment-processors.html", "Cheapest US payment processors", "Ranked by monthly cost at $20k/mo."))
 
     # 4. Merchant of Record Comparison
     mor_report = compare_processors(CalculatorInput(monthly_volume_usd=20000, avg_ticket_usd=50, require_mor=True))
@@ -422,13 +422,13 @@ def generate_category_pages(providers_data: dict, pricing_by_id: dict) -> list[t
             "Merchant of Record Comparison (2026): Paddle, Lemon Squeezy, 2Checkout, FastSpring",
             "Compare Merchant of Record platforms that handle global SaaS sales tax and VAT compliance.",
             f"{BASE_URL}/merchant-of-record-comparison.html",
-            "Merchant of Record Comparison",
+            "Merchant of Record comparison",
             "Compare SaaS Merchant of Record platforms handling global sales tax and VAT.",
             mor_body,
         ),
         encoding="utf-8",
     )
-    generated.append(("merchant-of-record-comparison.html", "Merchant of Record Comparison", "Paddle, Lemon Squeezy, 2Checkout, FastSpring."))
+    generated.append(("merchant-of-record-comparison.html", "Merchant of Record comparison", "Paddle, Lemon Squeezy, 2Checkout, FastSpring."))
 
     return generated
 
@@ -483,21 +483,21 @@ def update_index_guides(
         )
 
     guides_block = f"""<section class="guides-section">
-      <h2>Category &amp; API Guides</h2>
+      <h2>Category and API guides</h2>
       <div class="guides-grid">
         {cards(cat_pages)}
       </div>
     </section>
 
     <section class="guides-section">
-      <h2>Processor Alternatives</h2>
+      <h2>Processor alternatives</h2>
       <div class="guides-grid">
         {cards(alt_pages)}
       </div>
     </section>
 
     <section class="guides-section">
-      <h2>Head-to-Head Comparisons</h2>
+      <h2>Head-to-head comparisons</h2>
       <div class="guides-grid">
         {cards(vs_pages)}
       </div>

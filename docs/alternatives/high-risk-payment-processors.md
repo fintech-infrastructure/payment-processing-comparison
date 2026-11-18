@@ -1,6 +1,6 @@
-# High-Risk Payment Processors (2026)
+# High-risk payment processors (2026)
 
-Compare gateways and underwritten accounts for industries declined by aggregators.
+Compare gateways and underwritten accounts for verticals declined by aggregators.
 
 | Provider | Published Rate | $20k/mo Est. | Best Fit | Migration Effort |
 | --- | --- | --- | --- | --- |

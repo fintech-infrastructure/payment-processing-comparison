@@ -1,4 +1,4 @@
-# Best Paddle Alternatives (MoR) (2026)
+# Best Paddle alternatives (MoR) (2026)
 
 Compare SaaS Merchant of Record platforms and global tax-handling options.
 

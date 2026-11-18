@@ -1,6 +1,6 @@
-# Best Authorize.net Alternatives (2026)
+# Best Authorize.net alternatives (2026)
 
-Compare modern payment APIs, gateway-only options, and no-monthly-fee processors.
+Compare payment APIs, gateway-only options, and zero-monthly-fee processors.
 
 | Provider | Published Rate | $20k/mo Est. | Best Fit | Migration Effort |
 | --- | --- | --- | --- | --- |

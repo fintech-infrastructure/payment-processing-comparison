@@ -1,4 +1,4 @@
-# Best PayPal Alternatives (2026)
+# Best PayPal alternatives (2026)
 
 Compare developer APIs, native ACH support, and lower card processing fees.
 

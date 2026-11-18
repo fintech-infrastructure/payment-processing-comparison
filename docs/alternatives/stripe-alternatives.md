@@ -1,4 +1,4 @@
-# Best Stripe Alternatives (2026)
+# Best Stripe alternatives (2026)
 
 Compare interchange-plus rates, Merchant of Record tax handling, and B2B ACH.
 
